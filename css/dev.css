@@ -1,0 +1,145 @@
+.modal-dialog {
+  width: 90%;
+}
+.thumbnail {
+  margin-bottom: 6px;
+  padding: 0px;
+  object-fit: cover;
+  width: 230px;
+  height: 230px;
+  width: 100%;
+  max-width: 300px;
+}
+.zoom {
+  transition: transform .5s;
+  cursor: pointer;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3); 
+  z-index: 20;
+}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  z-index: 20;
+  overflow-y: hidden;
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 600px;
+  max-height: 600px;
+  width: auto; 
+  height: auto;
+  z-index: 20;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  padding: 10px 0;
+  height: 150px;
+  z-index: 20;
+  letter-spacing: 10px;
+  font-size: 20px;
+  color: white;
+}
+
+/* Add Animation */
+.modal-content, #caption, .modal-body {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+  z-index: 20;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  background-color: white;
+}
+.close:hover,
+.close:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+.containerG {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  padding: 27px;
+}
+
+.modal-body {
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+  width: 95%;
+  overflow-y: hidden;
+}
+
+.btn-border {
+  border-color: white;
+  border-radius: 7px;
+}
+
+.like-counter {
+  margin-top: 30px; 
+  letter-spacing: 4px;
+  color: #111;
+  font-weight: 100;
+  font: 100 35px/1.8 Lato, sans-serif;
+}
+
+.thumbs-up {
+  margin-bottom: 23px;
+}
