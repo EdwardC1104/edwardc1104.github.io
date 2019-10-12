@@ -1,0 +1,16 @@
+{
+    "name": "PhotoClark Progressive Web App",
+    "short_name": "PhotoClark",
+    "description": "I'm PhotoClark. Welcome to my website. I will be sharing many of my photos here. I mostly take landscape pictures in rural areas in and around Dorset, England. I coded this website myself, and I will be updating it regularly. I would love to hear your feedback, so please leave a comment.",
+    "icons": [
+        {
+            "src": "https://image.flaticon.com/icons/png/512/3/3901.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "index.php",
+    "display": "fullscreen",
+    "theme_color": "#B12A34",
+    "background_color": "#B12A34"
+}

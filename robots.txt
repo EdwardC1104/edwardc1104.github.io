@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /images/*
+Disallow: /testing/*
+Disallow: /*.gif$
+Disallow: /*.GIF$
+Disallow: /*.jpg$
+Disallow: /*.JPG$
+Disallow: /*.jpeg$
+Disallow: /*.JPEG$
+Disallow: /*.png$
+Disallow: /*.PNG$
