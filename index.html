@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -22,20 +21,20 @@
         <link href="css/dev.css" rel="stylesheet" type="text/css">
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
         <style>
-        	body:after {
-				content: "";
-				position: fixed;
-				top: 0;
-				height: 100vh;
-				left: 0;
-				right: 0;
-				z-index: -1;
-				background: url("images/logo-bg3.png") center center;
-				-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-				background-size: cover;
-			}
+            body:after {
+            content: "";
+            position: fixed;
+            top: 0;
+            height: 100vh;
+            left: 0;
+            right: 0;
+            z-index: -1;
+            background: url("images/logo-bg3.png") center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            }
         </style>
     </head>
     <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -50,7 +49,7 @@
                 <div class="sk-cube sk-cube7"></div>
                 <div class="sk-cube sk-cube8"></div>
                 <div class="sk-cube sk-cube9"></div>
-			</div>
+            </div>
         </div>
         <div id="top"></div>
         <script>
@@ -80,9 +79,9 @@
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#top">HOME</a></li>
-                        <li><a href="photography" class="transition">ME</a></li>
-                        <li><a href="#feedback">HISTORY</a></li>
-                        <li><a href="https://photoclark.co.uk/hosting" class="transition">POJECTS</a></li>
+                        <li><a href="#me">ME</a></li>
+                        <li><a href="#history">JOURNEY</a></li>
+                        <li><a href="#projects">PROJECTS</a></li>
                     </ul>
                 </div>
             </div>
@@ -96,121 +95,83 @@
             </div>
         </center>
         <div class="page-content-light">
-        <div id="band" class="container text-center">
-            <div data-aos="zoom-out-up">
-                <h3 id="welcome">WELCOME GITHUB WOAh!</h3>
-            </div>
-            <div data-aos="zoom-out-up">
-                <p><em>This website is made up of <?php echo $lines; ?> lines of code!</em></p>
-                <p>I'm PhotoClark. Welcome to my website. I will be sharing many of my photos here. I mostly take landscape pictures in rural areas in and around Dorset, England. I coded this website myself, and I will be updating it regularly. I would love to hear your feedback, so please leave a comment. </p>
-                <p><em>This website is still under construction.</em></p>
+            <div id="band" class="container text-center">
+                <div data-aos="zoom-out-up">
+                    <h3 id="welcome">WELCOME!</h3>
+                </div>
+                <div data-aos="zoom-out-up">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto ducimus alias maiores impedit minima unde cupiditate pariatur. Laboriosam sapiente sequi ducimus delectus tempora numquam facilis nobis autem, quod, enim distinctio!</p>
+                    <p><em>This website is still under construction.</em></p>
+                </div>
+                <br>
+
+
+
+
+
+
+
+
+
+
             </div>
             <br>
-            <div class="row">
-                <div class="col-md-4">
-                    <p class="text-center"><strong></strong></p>
-                    <a href="#dropdown" data-toggle="collapse">
-                        <div data-aos="zoom-out-up"><img src="images/home.png" class="img-circle person" alt="Random Name" width="255" height="255"></div>
-                    </a>
-                    <div id="dropdown" class="collapse">
-                        <p>Everything you need to know about me!</p>
-                        <div class="smooth">
-                            <a href="#top" class="smooth">
-                                <p style=" font-size: 125%; ">Let's go! <span class="glyphicon glyphicon-arrow-right"></span></p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <p class="text-center"><strong></strong></p>
-                    <a href="#dropdown2" data-toggle="collapse">
-                        <div data-aos="zoom-out-up"><img src="images/photography.png" class="img-circle person" alt="Random Name" width="255" height="255"></div>
-                    </a>
-                    <div id="dropdown2" class="collapse">
-                        <p>A gallery of lots of my best pictures!</p>
-                        <a href="photography/">
-                            <p style=" font-size: 125%; ">Let's go! <span class="glyphicon glyphicon-arrow-right"></span></p>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <p class="text-center"><strong></strong></p>
-                    <a href="#dropdown4" data-toggle="collapse">
-                        <div data-aos="zoom-out-up"><img src="images/feedback.png" class="img-circle person" alt="Random Name" width="255" height="255"></div>
-                    </a>
-                    <div id="dropdown4" class="collapse">
-                        <p>Please leave any comments!</p>
-                        <div class="smooth">
-                            <a href="#feedback">
-                                <p style=" font-size: 125%; ">Let's go! <span class="glyphicon glyphicon-arrow-right"></span></p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br>
         </div>
         <div class="page-content-dark">
             <div data-aos="zoom-out-up">
-                <h3 class="text-center">THE EVOLUTION OF THIS SITE</h3>
+                <h3 class="text-center">MY CODING JOURNEY</h3>
             </div>
             <center>
                 <div data-aos="zoom-out-up"><img src="images/evolution.png" width="150"></div>
             </center>
             <p></p>
-            <?PHP include 'home/timeline.php'; ?>
+            <div class="timeline">
+			    <div data-aos="zoom-out-up">
+			        <div class="tcontainer left">
+			            <div class="tcontent">
+			                <h2>2017</h2>
+			                <p>My coding journey first started in 2017, when I was introduced to some extremely basic python and html coding at school. This really excited me and I decided to continue learning at home. I taught myself HTML and CSS from online resources. I learnt all the basic skills needed to create a finished website.</p>
+			            </div>
+			        </div>
+			    </div>
+			    <div data-aos="zoom-out-up">
+			        <div class="tcontainer right">
+			            <div class="tcontent">
+			                <h2>2018</h2>
+			                <p>I branched out into PHP and created a database so I could have a comments section on my website. This required a lot of learning as I had to know the basics of two new languages - PHP and SQL. I was helped, during this process, by my computing teacher <a href="https://twitter.com/JHolmesICT" class="transition">James Holmes</a>.</p>
+			            </div>
+			        </div>
+			    </div>
+			    <div data-aos="zoom-out-up">
+			        <div class="tcontainer left">
+			            <div class="tcontent">
+			                <h2>2018</h2>
+			                <p>I made the large decision to totally redesign my website. I wanted to make it look more modern and be more up to date. This is what it looks like today. Most pages are hundreds of lines of code and everything has come a long way from where it started.</p>
+			            </div>
+			        </div>
+			    </div>
+			    <div data-aos="zoom-out-up">
+			        <div class="tcontainer right">
+			            <div class="tcontent">
+			                <h2>2019</h2>
+			                <p>I decided to learn bootstrap to make my website responsive, so it would look professional on all devices. I was putting a lot of effort into the smaller things that make a site look professional.</p>
+			            </div>
+			        </div>
+			    </div>
+			</div>
         </div>
         <div class="page-content-light">
-        <br>
-        <div id="feedback"></div>
-        <div id="contact" class="container">
-            <div data-aos="zoom-out-up">
-                <h3 class="text-center">COMMENT</h3>
-            </div>
-            <div data-aos="zoom-out-up">
-                <p class="text-center"><em>What do you think?</em></p>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <br>
-                    <div data-aos="zoom-out-up">
-                        <p><span class="glyphicon glyphicon-map-marker"></span> Dorset, UK</p>
-                        <p><span class="glyphicon glyphicon-envelope"></span> Email: admin@photoclark.co.uk</p>
-                        <p><span class="glyphicon glyphicon-user"></span> Twitter: @photoclark11</p>
-                    </div>
-                    <br>
-                </div>
-                <div data-aos="zoom-out-up">
-                    <div class="col-md-8">
-                        <form action="#feedback"  method="post">
-                            <div class="row">
-                                <div class="col-sm-6 form-group">
-                                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-                                </div>
-                                <div class="col-sm-6 form-group">
-                                    <input class="form-control" id="email" name="email" placeholder="Email" type="email">
-                                </div>
-                            </div>
-                            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5" required></textarea>
-                            <br>
-                            <div class="row">
-                                <div class="col-md-12 form-group">
-                                    <div class="g-recaptcha pull-left" data-sitekey="6Le4GYUUAAAAAJVqyx82m-PJRzzTlKxJy8CVinLN"></div>
-                                    <button class="btn pull-right" type="submit"  id="send_message" style="margin-top: 18px;">Go!</button>
-                                </div>
-                            </div>
-                    </div>
-                    </form>
-                </div>
-            </div>
             <br>
-            <div data-aos="zoom-out-up">
-                <h3 class="text-center">THE FEEDBACK</h3>
-            </div>
+
+
+
+
+
+
+
+
 
         </div>
-    </div>
         <footer class="page-footer font-small unique-color-dark">
             <div data-aos="zoom-out-up">
                 <div class="container text-center text-md-left mt-5">
@@ -222,43 +183,153 @@
                         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                             <h6 class="text-uppercase font-weight-bold">PhotoClark</h6>
                             <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                            <p>There have been <?PHP include 'components/counter.txt'; ?> visits to this website so far. Infomation on where they come from will be coming soon.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio fuga aspernatur nobis non reprehenderit quidem vel, repudiandae ab nihil labore dicta iusto tempora.</p>
                         </div>
-                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                            <h6 class="text-uppercase font-weight-bold">Key Places</h6>
-                            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                            <p>
-                                <a href="#top">Home</a>
-                            </p>
-                            <p>
-                                <a href="photography/">Photography</a>
-                            </p>
-                            <p>
-                                <a href="#feedback">Feedback</a>
-                            </p>                        </div>
                         <div class="hide-on-mobile">
-                            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                                <h6 class="text-uppercase font-weight-bold">Other Sites I Host</h6>
-                                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                                <p>
-                                    <a href="https://photoclark.co.uk/hosting">Hosting</a>
+	                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+	                            <h6 class="text-uppercase font-weight-bold">Key Places</h6>
+	                            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+	                            <p>
+	                                <a href="#top">Home</a>
+	                            </p>
+	                            <p>
+	                                <a href="#me">Me</a>
+	                            </p>
+	                            <p>
+	                                <a href="#journey">Journey</a>
+	                            </p>
+	                            <p>
+	                                <a href="#projects">Projects</a>
+	                            </p>
+	                        </div>
+	                    </div>
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <h6 class="text-uppercase font-weight-bold">SOCIALS</h6>
+                            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                            <p><span class="glyphicon glyphicon-user"></span> Reddit: 
+                                <a href="https://www.reddit.com/user/EdwardC1104" target="_blank">u/EdwardC1104</a>
+                            </p>
+                            <p><span class="glyphicon glyphicon-user"></span> Twitter: 
+                                <a href="https://twitter.com/PhotoClark11" target="_blank">@photoclark11</a>
                                 </p>
-                            </div>
                         </div>
                         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                             <h6 class="text-uppercase font-weight-bold">Contact</h6>
                             <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                            <p>
                             <p><span class="glyphicon glyphicon-map-marker"></span> Dorset, UK</p>
-                            <p>
-                            <p><span class="glyphicon glyphicon-envelope"></span> Email: admin@photoclark.co.uk</p>
-                            <p>
-                            <p><span class="glyphicon glyphicon-user"></span> Twitter: @photoclark11</p>
+                            <p><span class="glyphicon glyphicon-envelope"></span> Email: 
+                            	<a href = "mailto: admin@photoclark.co.uk">admin@photoclark.co.uk</a></p>
+                            <p><span class="glyphicon glyphicon-user"></span> GitHub: 
+                                <a href="https://github.com/EdwardC1104" target="_blank">EdwardC1104</a>
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="footer-darker text-center py-3">© 2019 Copyright</div>
+                <div class="footer-darker text-center py-3">
+                    &copy 
+                    <script>
+                        var dt = new Date();
+                        document.write(dt.getFullYear() ); 
+                    </script>  
+                    Copyright
+                </div>
         </footer>
         </div>
     </body>
 </html>
+
+
+<!-- OLD CODE -->
+                <!--<div class="row">
+                    <div class="col-md-4">
+                        <p class="text-center"><strong></strong></p>
+                        <a href="#dropdown" data-toggle="collapse">
+                            <div data-aos="zoom-out-up"><img src="images/home.png" class="img-circle person" alt="Random Name" width="255" height="255"></div>
+                        </a>
+                        <div id="dropdown" class="collapse">
+                            <p>Everything you need to know about me!</p>
+                            <div class="smooth">
+                                <a href="#top" class="smooth">
+                                    <p style=" font-size: 125%; ">Let's go! <span class="glyphicon glyphicon-arrow-right"></span></p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="text-center"><strong></strong></p>
+                        <a href="#dropdown2" data-toggle="collapse">
+                            <div data-aos="zoom-out-up"><img src="images/photography.png" class="img-circle person" alt="Random Name" width="255" height="255"></div>
+                        </a>
+                        <div id="dropdown2" class="collapse">
+                            <p>A gallery of lots of my best pictures!</p>
+                            <a href="photography/">
+                                <p style=" font-size: 125%; ">Let's go! <span class="glyphicon glyphicon-arrow-right"></span></p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="text-center"><strong></strong></p>
+                        <a href="#dropdown4" data-toggle="collapse">
+                            <div data-aos="zoom-out-up"><img src="images/feedback.png" class="img-circle person" alt="Random Name" width="255" height="255"></div>
+                        </a>
+                        <div id="dropdown4" class="collapse">
+                            <p>Please leave any comments!</p>
+                            <div class="smooth">
+                                <a href="#feedback">
+                                    <p style=" font-size: 125%; ">Let's go! <span class="glyphicon glyphicon-arrow-right"></span></p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>-->
+
+
+
+
+            <!--<div id="feedback"></div>
+                <div id="contact" class="container">
+                    <div data-aos="zoom-out-up">
+                        <h3 class="text-center">COMMENT</h3>
+                    </div>
+                    <div data-aos="zoom-out-up">
+                        <p class="text-center"><em>What do you think?</em></p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <br>
+                            <div data-aos="zoom-out-up">
+                                <p><span class="glyphicon glyphicon-map-marker"></span> Dorset, UK</p>
+                                <p><span class="glyphicon glyphicon-envelope"></span> Email: admin@photoclark.co.uk</p>
+                                <p><span class="glyphicon glyphicon-user"></span> Twitter: @photoclark11</p>
+                            </div>
+                            <br>
+                        </div>
+                        <div data-aos="zoom-out-up">
+                            <div class="col-md-8">
+                                <form action="#feedback"  method="post">
+                                    <div class="row">
+                                        <div class="col-sm-6 form-group">
+                                            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                                        </div>
+                                        <div class="col-sm-6 form-group">
+                                            <input class="form-control" id="email" name="email" placeholder="Email" type="email">
+                                        </div>
+                                    </div>
+                                    <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5" required></textarea>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-md-12 form-group">
+                                            <div class="g-recaptcha pull-left" data-sitekey="6Le4GYUUAAAAAJVqyx82m-PJRzzTlKxJy8CVinLN"></div>
+                                            <button class="btn pull-right" type="submit"  id="send_message" style="margin-top: 18px;">Go!</button>
+                                        </div>
+                                    </div>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                    <br>
+                    <div data-aos="zoom-out-up">
+                        <h3 class="text-center">THE FEEDBACK</h3>
+                    </div>
+                
+                </div>-->
