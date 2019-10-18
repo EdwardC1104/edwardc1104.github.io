@@ -9,3 +9,5 @@ Disallow: /*.jpeg$
 Disallow: /*.JPEG$
 Disallow: /*.png$
 Disallow: /*.PNG$
+Disallow: /*.mp4$
+Disallow: /*.MP4$
