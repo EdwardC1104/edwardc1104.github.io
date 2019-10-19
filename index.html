@@ -18,8 +18,13 @@
         <link href="css/base.css" rel="stylesheet" type="text/css">
         <link href="css/main.css" rel="stylesheet" type="text/css">
         <link href="css/responsive.css" rel="stylesheet" type="text/css">
+        <link href="css/animate.css" rel="stylesheet" type="text/css">
         <link href="css/dev.css" rel="stylesheet" type="text/css">
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
         <style>
             body:after {
             content: "";
@@ -58,6 +63,7 @@
         <script src="js/smooth-scroll.js"></script>
         <script src="js/scroll-offset.js"></script>
         <script src="js/loader.js"></script>
+        <script src="js/scroll-actions.js"></script>
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -105,11 +111,22 @@
                 </div>
                 <br>
 
+	<div id="scene-100%">
+
+	</div>
 
 
 
-
-
+<div class="trigger"></div>
+<svg version="1.1" id="tick" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 37 37" style="enable-background:new 0 0 37 37;" xml:space="preserve">
+<path class="circ path" style="fill:none;stroke:#000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:10;" d="
+	M30.5,6.5L30.5,6.5c6.6,6.6,6.6,17.4,0,24l0,0c-6.6,6.6-17.4,6.6-24,0l0,0c-6.6-6.6-6.6-17.4,0-24l0,0C13.1-0.2,23.9-0.2,30.5,6.5z"
+	/>
+<polyline class="tick path" style="fill:none;stroke:#000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:10;" points="
+	11.6,20 15.9,24.2 26.4,13.8 "/>
+</svg>
+<button>go/reset</button>
 
 
 
