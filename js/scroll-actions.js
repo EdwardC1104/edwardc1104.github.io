@@ -1,4 +1,4 @@
-var tween = TweenLite.to("#hello", 1, {className: "+=big-text"});
+var tween = TweenLite.to("#hello", 1, {scale: 4.5});
 
 const controller = new ScrollMagic.Controller();
 
