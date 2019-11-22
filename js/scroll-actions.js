@@ -1,4 +1,4 @@
-var tween = TweenLite.to("#hello", 1, {scale: 4.5});
+var tween = TweenLite.to("#hello", 1, {className: "+=big-text"});
 
 const controller = new ScrollMagic.Controller();
 
@@ -10,7 +10,7 @@ const scene = new ScrollMagic.Scene({
 })
 	.setTween(tween)
 	.setPin(".animation1")
-	.addIndicators()
+	/*.addIndicators()*/
 	.addTo(controller);
 
 

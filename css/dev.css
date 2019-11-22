@@ -1,40 +1,38 @@
 @import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap');
 * {
   margin: 0;
-  padding:; 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: rgb(255,255,255);
-  background: -webkit-linear-gradient(341deg, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 100%);
-  background: -o-linear-gradient(341deg, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 100%);
-  background: linear-gradient(71deg, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ededed",GradientType=1);
+  background-color: #0e1628;
 }
 
 h1 {
   font-family: 'Bebas Neue', cursive;
-  font-family: 'Corbel'
-  color: white;
-  -webkit-text-stroke: 0.015em black; 
+  color: #c9d3d6;
   letter-spacing: 0.075em;
 }
 
 h2 {
   font-size: 10vw;
   font-family: 'Bebas Neue', cursive;
-  color: black;
+  color: #c9d3d6;
   letter-spacing: 0.075em;
   text-align: center;
 }
 
-p {
-  font-family: 'Inconsolata', monospace;
+p.text {
+  font-family: 'Ubuntu Mono', monospace;
   font-size: 25px;
-  line-height: 140%;
+  color: #c9d3d6;
+  margin-left: 30px;
 }
 
 .flex-container1 {
@@ -45,18 +43,17 @@ p {
 
 .flex-container1 > div {
   background-color: transparent;
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
 }
 
 .flex-container1 > #flex1 {
-  width: calc(40% - 20px);
+  width: calc(60% - 20px);
+  font-size: 20px;
 }
 
 .flex-container1 > #flex2 {
-  width: calc(60% - 20px);
+  width: calc(40% - 20px);
+  text-align: center;
+  position: relative;
 }
 
 @media (max-device-width: 812px) {
@@ -69,13 +66,88 @@ p {
   }
 }
 
+.big-text {
+  font-size: 20vw;
+}
 
 #hello {
-  width: 15vw;
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  color: #c9d3d6;
 }
 
 .animation1 {
   font-size: 1em;
   text-align: center;
-  margin-bottom: 3vw;
+  margin-bottom: 20vw;
+}
+
+.title {
+  color: #f5a002;
+  font-size: 30px;
+  font-family: Monospace;
+  margin-left: 30px;
+}
+
+#flash {
+  animation: blinker 1s step-end infinite;
+}
+
+@keyframes blinker {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+pre, code {
+  font-family: monospace, monospace;
+  font-size: 20px;
+}
+pre {
+  overflow: ;
+  margin: 30px !important;
+  -webkit-box-shadow: 3px 3px 24px 0px rgba(0,0,0,0.64);
+  -moz-box-shadow: 3px 3px 24px 0px rgba(0,0,0,0.64);
+  box-shadow: 3px 3px 24px 0px rgba(0,0,0,0.64);
+  overflow-wrap: break-word;
+}
+pre > code {
+  display: block;
+  padding: 1rem;
+  word-wrap: normal;
+}
+
+.language-python {
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  -moz-tab-size: 4; -o-tab-size: 4; tab-size: 4;
+  -webkit-hyphens: none; -moz-hyphens: none; -ms-hyphens: none; hyphens: none;
+  overflow-wrap: break-word;
+  overflow: hidden;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+h2.subtitle {
+  font-size: 7vw;
+}
+
+p > a {
+  color: inherit;
 }
