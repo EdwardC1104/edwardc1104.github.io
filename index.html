@@ -50,30 +50,30 @@ else:
 			</div>
 		</div>
 		<br><br>
-		<span id="title">print("Contents")<span id="flash">_</span></span>
+		<span class="title">print("Contents")<span id="flash">_</span></span>
 		<br><br>
-		<p class="text"><b>Python</b></p></br>
-		<p class="text"> - <a href="#variables">Variables</a></p>
-		<p class="text"> - <a href="#strings">Strings</a></p>
-		<p class="text"> - <a href="#numbers">Numbers</a></p>
-		<p class="text"> - <a href="#input">Input</a></p>
-		<p class="text"> - <a href="#lists">Lists</a></p>
-		<p class="text"> - <a href="#morelists">List Functions</a></p>
-		<p class="text"> - <a href="#turples">Turples</a></p>
-		<p class="text"> - <a href="#functions">Functions</a></p>
-		<p class="text"> - <a href="#return">Return Statements</a></p>
-		<p class="text"> - <a href="#if">If Statements</a></p>
-		<p class="text"> - <a href="#dictionaries">Dictionaries</a></p>
-		<p class="text"> - <a href="#while">While Loop</a></p>
-		<p class="text"> - <a href="#for">For Loops</a></p>
-		<p class="text"> - <a href="#exponent">Exponent Functions</a></p>
-		<p class="text"> - <a href="#nests">2D Lists & Nested Loops</a></p>
-		<p class="text"> - <a href="#comments">Comments</a></p>
-		<p class="text"> - <a href="#errors">Try & Except</a></p>
-		<p class="text"> - <a href="#files">Reading & Writing Files</a></p>
-		<p class="text"> - <a href="#arrays">Classes & Objects</a></p>
-		<p class="text"> - <a href="#arrays">Object Functions</a></p>
-		<p class="text"> - <a href="#arrays">Inheritance</a></p>
+		<p class="text always-left-text"><b>Python</b></p></br>
+		<p class="text always-left-text"> - <a href="#variables">Variables</a></p>
+		<p class="text always-left-text"> - <a href="#strings">Strings</a></p>
+		<p class="text always-left-text"> - <a href="#numbers">Numbers</a></p>
+		<p class="text always-left-text"> - <a href="#inputs">Inputs</a></p>
+		<p class="text always-left-text"> - <a href="#lists">Lists</a></p>
+		<p class="text always-left-text"> - <a href="#morelists">List Functions</a></p>
+		<p class="text always-left-text"> - <a href="#turples">Turples</a></p>
+		<p class="text always-left-text"> - <a href="#functions">Functions</a></p>
+		<p class="text always-left-text left-text"> - <a href="#return">Return Statements</a></p>
+		<p class="text always-left-text"> - <a href="#if">If Statements</a></p>
+		<p class="text always-left-text"> - <a href="#dictionaries">Dictionaries</a></p>
+		<p class="text always-left-text"> - <a href="#while">While Loop</a></p>
+		<p class="text always-left-text"> - <a href="#for">For Loops</a></p>
+		<p class="text always-left-text"> - <a href="#exponent">Exponent Functions</a></p>
+		<p class="text always-left-text"> - <a href="#nests">2D Lists & Nested Loops</a></p>
+		<p class="text always-left-text"> - <a href="#comments">Comments</a></p>
+		<p class="text always-left-text"> - <a href="#errors">Try & Except</a></p>
+		<p class="text always-left-text"> - <a href="#files">Reading & Writing Files</a></p>
+		<p class="text always-left-text"> - <a href="#arrays">Classes & Objects</a></p>
+		<p class="text always-left-text"> - <a href="#arrays">Object Functions</a></p>
+		<p class="text always-left-text"> - <a href="#arrays">Inheritance</a></p>
 		<br><br>
 		<h2 class="subtitle">Python</h2>
 		<br>
@@ -82,7 +82,7 @@ else:
 		<div class="flex-container1">
 			<div id="flex2">
 				<div class="vertical-center">
-					<p class="text">A Python variable is a reserved memory location to store values. Every value in Python has a datatype. eg. str(), char(), int(), float()</p>
+					<p class="text left-text">A Python variable is a reserved memory location to store values. Every value in Python has a datatype. eg. <i>str()</i>, <i>char()</i>, <i>int()</i>, <i>float()</i></p>
 				</div>
 			</div>
 			<div id="flex1">
@@ -98,23 +98,78 @@ print("but didn't like being " + character_age + ".")</code></pre>
 			</div>
 		</div>
 		<br><br>
-		<span class="title">print("Variables")<span id="flash">_</span></span>
+		<span id="strings" class="title">print("Strings")<span id="flash">_</span></span>
 		<br>
 		<div class="flex-container1">
 			<div id="flex1">
 				<div class="code-container">
-					<pre class="language-python"><code>character_name = "John"
-character_age = "35"
-print("There once was a man named " + character_name + ", ")
-print("he was " + character_age + " years old.")
-print("He really liked the name " + character_name + ", ")
-print("but didn't like being " + character_age + ".")</code></pre>
+					<pre class="language-python"><code>print("Hello \n World")
+print("I " + "love " + " concatenation!")
+print("""Multi...
+...lined string""")</code></pre>
 
 				</div>
 			</div>
 			<div id="flex2">
 				<div class="vertical-center">
-					<p class="text">A Python variable is a reserved memory location to store values. Every value in Python has a datatype. eg. str(), char(), int(), float()</p>
+					<p class="text right-text">String literals in python are surrounded by either single quotation marks, or double quotation marks. They are displayed using <i>print()</i>.</p>
+				</div>
+			</div>
+		</div>
+		<br><br>
+		<span id="numbers" class="title" >print("Numbers")<span id="flash">_</span></span>
+		<br>
+		<div class="flex-container1">
+			<div id="flex2">
+				<div class="vertical-center">
+					<p class="text left-text">In Python, the operators for numbers are +, -, *, /. To print a number you first have to convert it to a string using <i>str()</i>. By importing <i>math</i>, you get lots of extra maths functions that aren't native to Python, such as rounding, powers and roots. You convert a string to integer by using <i>int()</i> and you use <i>float()</i> for decimals.</p>
+				</div>
+			</div>
+			<div id="flex1">
+				<div class="code-container">
+					<pre class="language-python"><code>from math import *
+
+print(5)
+print(5 * 2)
+print(5 / 2)
+print(5 + 2)
+print(5 - 2)
+
+my_num = 5
+print(str(my_num) + " is a number.")
+
+my_numnum = -5
+print(abs(my_numnum))
+
+print(pow(4, 64))
+
+print(max(4, 6))
+print(min(4, 6))
+
+print(round(3.8))
+print(round(3.2))
+
+print(floor(3.8))
+print(ceil(3.8))
+
+print(sqrt(123456789))</code></pre>
+				</div>
+			</div>
+		</div>
+		<br><br>
+		<span id="inputs" class="title">print("Inputs")<span id="flash">_</span></span>
+		<br>
+		<div class="flex-container1">
+			<div id="flex1">
+				<div class="code-container">
+					<pre class="language-python"><code>name = input("Enter your name: ")
+age = input("Enter your age: ")
+print("Hello " + name + "! You are " + age + " years old!")</code></pre>
+				</div>
+			</div>
+			<div id="flex2">
+				<div class="vertical-center">
+					<p class="text right-text">Python can recieve inputs from the user and then set that input as a variable for the program to use. </p>
 				</div>
 			</div>
 		</div>

@@ -32,13 +32,14 @@ p.text {
   font-family: 'Ubuntu Mono', monospace;
   font-size: 25px;
   color: #c9d3d6;
-  margin-left: 30px;
+  margin: auto;
 }
 
 .flex-container1 {
   display: flex;
   flex-wrap: wrap;
   background-color: transparent;
+  margin: auto;
 }
 
 .flex-container1 > div {
@@ -53,7 +54,7 @@ p.text {
 .flex-container1 > #flex2 {
   width: calc(40% - 20px);
   text-align: center;
-  position: relative;
+  margin: auto;
 }
 
 @media (max-device-width: 812px) {
@@ -138,10 +139,12 @@ pre > code {
 
 .vertical-center {
   margin: 0;
-  position: absolute;
+  /*position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  transform: translateY(-50%);*/
+  display: table-cell!important;
+  vertical-align: middle;
 }
 
 h2.subtitle {
@@ -150,4 +153,28 @@ h2.subtitle {
 
 p > a {
   color: inherit;
+}
+
+@media (min-device-width: 597px) {
+  .left-text {
+    margin-left: 30px!important;
+  }
+}
+
+@media (min-device-width: 597px) and (max-device-width: 812px) {
+  .right-text {
+    margin-left: 30px!important;
+  }
+}
+
+.always-left-text {
+  margin-left: 30px!important;
+}
+
+pre, code {
+ white-space: pre-wrap!important;       /* css-3 */
+ white-space: -moz-pre-wrap!important;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap!important;      /* Opera 4-6 */
+ white-space: -o-pre-wrap!important;    /* Opera 7 */
+ word-wrap: break-word!important;       /* Internet Explorer 5.5+ */
 }
