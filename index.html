@@ -4,17 +4,9 @@
         <title>PhotoClark - Home</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--<link rel="icon" href="images/favicon.ico">
-        <meta name="keywords" content="photoclark" />
-        <meta name="description" content=" ">
-        <link rel="manifest" href="pwa.webmanifest">-->
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-        <!--<link href="css/base.css" rel="stylesheet" type="text/css">
-        <link href="css/main.css" rel="stylesheet" type="text/css">
-       	<link href="css/responsive.css" rel="stylesheet" type="text/css">
-        <link href="css/animate.css" rel="stylesheet" type="text/css">-->
         <link href="css/dev.css" rel="stylesheet" type="text/css">
         <link href="css/prism.css" rel="stylesheet" type="text/css">
 
@@ -77,6 +69,7 @@ else:
 		<br><br>
 		<h2 class="subtitle">Python</h2>
 		<br>
+		<!--VARIABLES-->
 		<span id="variables" class="title" >print("Variables")<span id="flash">_</span></span>
 		<br>
 		<div class="flex-container1">
@@ -98,6 +91,7 @@ print("but didn't like being " + character_age + ".")</code></pre>
 			</div>
 		</div>
 		<br><br>
+		<!--STRINGS-->
 		<span id="strings" class="title">print("Strings")<span id="flash">_</span></span>
 		<br>
 		<div class="flex-container1">
@@ -117,6 +111,7 @@ print("""Multi...
 			</div>
 		</div>
 		<br><br>
+		<!--NUMBERS-->
 		<span id="numbers" class="title" >print("Numbers")<span id="flash">_</span></span>
 		<br>
 		<div class="flex-container1">
@@ -157,6 +152,7 @@ print(sqrt(123456789))</code></pre>
 			</div>
 		</div>
 		<br><br>
+		<!--INPUTS-->
 		<span id="inputs" class="title">print("Inputs")<span id="flash">_</span></span>
 		<br>
 		<div class="flex-container1">
@@ -169,10 +165,43 @@ print("Hello " + name + "! You are " + age + " years old!")</code></pre>
 			</div>
 			<div id="flex2">
 				<div class="vertical-center">
-					<p class="text right-text">Python can recieve inputs from the user and then set that input as a variable for the program to use. </p>
+					<p class="text right-text">Python can recieve inputs from the user and then set that input as a variable for the program to use. If your input is a number, remember to use <i>int()</i>.</p>
 				</div>
 			</div>
 		</div>
+		<br><br>
+		<!--LISTS-->
+		<span id="lists" class="title" >print("Lists")<span id="flash">_</span></span>
+		<br>
+		<div class="flex-container1">
+			<div id="flex2">
+				<div class="vertical-center">
+					<p class="text left-text">A Python variable is a reserved memory location to store values. Every value in Python has a datatype. eg. <i>str()</i>, <i>char()</i>, <i>int()</i>, <i>float()</i></p>
+				</div>
+			</div>
+			<div id="flex1">
+				<div class="code-container">
+					<pre class="language-python"><code>friends = ["Kevin", "Karen", "Jim", "Oscar", "Toby"]
+#             0        1       2       3       4
+print(friends)
+print(friends[0])
+print(friends[0][1])
+friends = ["Kevin", "Karen", "Jim", "Oscar", "Toby"]
+#            -5        -4      -3     -2       -1
+print(friends[-1])
+print(friends[1:3])
+friends[1] = "Mike"
+friends.insert(1, "Jake")
+friends.remove("Jim")
+friends.sort()
+friends.reverse()
+friends.clear
+</code></pre>
+
+				</div>
+			</div>
+		</div>
+		<br><br>
 		<script src="js/scroll-actions.js"></script>
 		<script src="js/smooth-scroll.js"></script>
 		<script src="js/prism.js"></script>
