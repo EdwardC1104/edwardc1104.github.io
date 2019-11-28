@@ -357,8 +357,20 @@ friends.clear
             </div>
             <div id="flex1">
                 <div class="code-container">
-                    <pre class="language-python"><code>
-</code></pre>
+                    <pre class="language-python"><code>x_dimensions = int(input("How many of each timetable would you like? ")) + 1
+y_dimensions = int(input("\nHow many times table would you like to include? ")) + 1
+
+for x in range(1, x_dimensions):
+	print("\n")
+	for y in range(1, y_dimensions):
+		if len(str(y * x)) == 2:
+			end_gap = "    "
+		elif len(str(y * x)) == 3:
+			end_gap = "   "
+		else:
+			end_gap = "     "
+
+		print(str(x * y ),  end = end_gap)</code></pre>
                 </div>
             </div>
         </div>	
