@@ -229,8 +229,9 @@ friends.clear
         <div class="flex-container1">
             <div id="flex1">
                 <div class="code-container">
-                    <pre class="language-python"><code>
-</code></pre>
+                    <pre class="language-python"><code>coordinates = (4, 5), (6,7), (80, 34)
+print(coordinates[1])
+print(coordinates[1][1])</code></pre>
                 </div>
             </div>
             <div id="flex2">
@@ -252,8 +253,18 @@ friends.clear
             </div>
             <div id="flex1">
                 <div class="code-container">
-                    <pre class="language-python"><code>
-</code></pre>
+                    <pre class="language-python"><code>def sayhello():
+    print("Hello User")
+
+sayhello()
+sayhello()
+
+
+def sayHelloTo(name, age):
+     return "Hello " + name + ", you are " + str(age)
+
+print(sayHelloTo("Mike", "56"))
+print(sayHelloTo("Steve", 23))</code></pre>
                 </div>
             </div>
         </div>	
@@ -264,8 +275,27 @@ friends.clear
         <div class="flex-container1">
             <div id="flex1">
                 <div class="code-container">
-                    <pre class="language-python"><code>
-</code></pre>
+                    <pre class="language-python"><code>is_male = True
+is_tall = False
+
+if is_male and is_tall:
+    print("tall male")
+elif is_male and not is_tall:
+    print("short male")
+elif is_tall and not is_male:
+    print("tall not male")
+else:
+    print("short not male")
+
+def max_num(x, y, z):
+    if x >= y and x >= z:
+        return x
+    elif y >= x and y >= z:
+        return y
+    else:
+        return z
+
+print(max_num(134,78,152))</code></pre>
                 </div>
             </div>
             <div id="flex2">
@@ -287,8 +317,14 @@ friends.clear
             </div>
             <div id="flex1">
                 <div class="code-container">
-                    <pre class="language-python"><code>
-</code></pre>
+                    <pre class="language-python"><code>monthConversions = {
+    "Jan": "January",
+    "Feb": "February",
+    "Mar": "March"
+}
+
+print(monthConversions.get("Mar", "Not a month"))
+print(monthConversions.get("xxx", "Not a month"))</code></pre>
                 </div>
             </div>
         </div>	
@@ -300,8 +336,15 @@ friends.clear
         <div class="flex-container1">
             <div id="flex1">
                 <div class="code-container">
-                    <pre class="language-python"><code>
-</code></pre>
+                    <pre class="language-python"><code>i = 1
+while i <= 10:
+    print(i)
+    i += 1
+
+print("Done with loop")
+
+while True:
+    print("Yay")</code></pre>
                 </div>
             </div>
             <div id="flex2">
@@ -323,8 +366,15 @@ friends.clear
             </div>
             <div id="flex1">
                 <div class="code-container">
-                    <pre class="language-python"><code>
-</code></pre>
+                    <pre class="language-python"><code>for letter in "peanutbutter":
+    print(letter)
+
+friends = ["Kevin", "Karen", "Jim", "Oscar", "Toby"]
+for friend in friends:
+    print(friend)
+
+for index in range(3, 10):
+    print(index)</code></pre>
                 </div>
             </div>
         </div>	
@@ -336,8 +386,13 @@ friends.clear
         <div class="flex-container1">
             <div id="flex1">
                 <div class="code-container">
-                    <pre class="language-python"><code>
-</code></pre>
+                    <pre class="language-python"><code>def power(base, pow):
+    answer = base
+    for i in range(pow-1):
+        answer = answer * base
+    return answer
+
+print(power(3,3))</code></pre>
                 </div>
             </div>
             <div id="flex2">
@@ -384,8 +439,10 @@ for x in range(1, x_dimensions):
         <div class="flex-container1">
             <div id="flex1">
                 <div class="code-container">
-                    <pre class="language-python"><code>
-</code></pre>
+                    <pre class="language-python"><code>#This says Comments are fun
+print("Comments are fun")
+
+#pint(buggybugtown")</code></pre>
                 </div>
             </div>
             <div id="flex2">
