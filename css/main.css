@@ -197,7 +197,7 @@ p > a {
 .cog {
   height: 43px;
   display: inline-block;
-  float: right;
+  float: right!important;
   margin-top: 5px;
   margin-bottom: 0px;
   margin-right: 20px;

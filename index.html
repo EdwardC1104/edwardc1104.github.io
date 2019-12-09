@@ -77,6 +77,9 @@ else:
 		        <p class="text always-left-text"> - <a href="#ordinal">Ordinal Numbers</a></p>
 		        <p class="text always-left-text"> - <a href="#cardinal">Cardinal Numbers</a></p>
 				<p class="text always-left-text"> - <a href="#units">Data Storage Units</a></p>
+                <p class="text always-left-text"> - <a href="#sets">Character Sets</a></p>
+                <p class="text always-left-text"> - <a href="#parity">Parity Error Checking</a></p>
+                <p class="text always-left-text"> - <a href="#majority">Majority Voting</a></p>
 		        <br><br>
 		    </div>
 		    <div class="flex3">
@@ -693,7 +696,7 @@ print("The list of fruit has " + len(fruit) + " items.")
         <br><br>
 		<!--DATA STORAGE UNITS-->
         <span id="units" class="title" >print("Data Storage Units")<span id="flash">_</span></span>
-        <span id="cog25"><img class="cog" src="img/cog2.png"></span>
+        <span id="cog27"><img class="cog" src="img/cog2.png"></span>
         </br></br>
         <div class="flex-container1">
             <div id="flex2">
@@ -721,7 +724,93 @@ print("The list of fruit has " + len(fruit) + " items.")
 }</code></pre>
                 </div>
             </div>
-        </div>	
+        </div>  
+        <br><br>
+        <!--CHARACTER SETS-->
+        <span id="sets" class="title" >print("Character Sets")<span id="flash">_</span></span>
+        <span id="cog28"><img class="cog" src="img/cog2.png"></span>
+        </br></br>
+		<div class="flex-container1">
+            <div id="flex1">
+                <div class="code-container">
+                    <pre class="language-python"><code>print("Convert me to ASCII!".encode("ascii"))
+                        
+print("Convert me to 8-bit Unicode!".encode("utf-8"))
+
+print("Convert me to 16-bit Unicode!".encode("utf-16"))
+
+print("Convert me to 32-bit Unicode!".encode("utf-32")</code></pre>
+                </div>
+            </div>
+            <div id="flex2">
+                <div class="vertical-center">
+                    <p class="text right-text">ASCII is a code for representing 128 English characters as numbers, with each letter assigned a number from 0 to 127. Unlike ASCII, Unicode was designed to support characters from all languages around the world. Unicode can support roughly 1,000,000 characters.</p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <!--ERROR CHECKING-->
+        <span id="parity" class="title" >print("Parity Error Checking")<span id="flash">_</span></span>
+        <span id="cog29"><img class="cog" src="img/cog2.png"></span>
+        </br></br>
+        <div class="flex-container1">
+            <div id="flex2">
+                <div class="vertical-center">
+                    <p class="text left-text">A parity bit is an additional bit that is used to check that the other bits are transmitted correctly. If using 7-bit ASCII there is an extra bit available to be used for parity. The total number of 1’s is counted in each byte including the parity bit equalled an odd or even number.</p>
+                </div>
+            </div>
+            <div id="flex1">
+                <div class="code-container">
+                    <pre class="language-python"><code>ascii_code = input("Enter a 7-bit binary number: ")
+
+total_of_is = 0
+for i in range(0, 6):
+    total_of_is += int(ascii_code[i])
+
+def isEven(num):
+    if (num % 2) == 0:
+        return True
+    else:
+        return False
+
+if isEven(total_of_is) and ascii_code[0] == "0":
+    print("Data ok!")
+elif not isEven(total_of_is) and ascii_code[0] == "1":
+    print("Data ok!")
+else:
+    print("Data Corrupt :-(")</code></pre>
+                </div>
+            </div>
+        </div>  
+        <br><br>
+        <!--MAJORITY VOTING-->
+        <span id="majority" class="title" >print("Majority Voting")<span id="flash">_</span></span>
+        <span id="cog30"><img class="cog" src="img/cog2.png"></span>
+        </br></br>
+        <div class="flex-container1">
+            <div id="flex1">
+                <div class="code-container">
+                    <pre class="language-python"><code>from statistics import mode
+
+data_1 = input("The first transfer: ")
+data_2 = input("The second transfer: ")
+data_3 = input("The third transfer: ")
+
+true_data = ""
+i = 0
+while i < len(mode([data_1, data_2, data_3])):
+    true_data = true_data + mode([data_1[i], data_2[i], data_3[i]])
+    i += 1
+
+print(true_data)</code></pre>
+                </div>
+            </div>
+            <div id="flex2">
+                <div class="vertical-center">
+                    <p class="text right-text">Majority voting is a system that requires each bit to be sent 3 times. If a bit value is flipped during transmission over a noisy line, the receiving computer would use the majority rule and would assume that the two bits that have not changed are correct.</p>
+                </div>
+            </div>
+        </div>
         <br><br>
         <script src="js/scroll-actions.js"></script>
         <script src="js/smooth-scroll.js"></script>
