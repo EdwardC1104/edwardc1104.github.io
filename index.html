@@ -42,7 +42,7 @@ else:
         <span id="cog21"><img class="cog" src="img/cog2.png"></span>
         <br><br>
         <div class="flex-container1">
-            <div id="flex1">
+            <div id="flex1 flex-top">
 		        <p class="text always-left-text"><b>Python</b></p>
 		        </br>
 		        <p class="text always-left-text"> - <a href="#variables">Variables</a></p>
@@ -66,7 +66,7 @@ else:
 		        <p class="text always-left-text"> - <a href="#inheritance">Inheritance</a></p>
 		        <br><br>
 		    </div>
-        	<div class="flex2">
+        	<div class="flex2 flex-second">
 		        <p class="text always-left-text"><b>Data Representation</b></p>
 		    	</br>
 		        <p class="text always-left-text"> - <a href="#integer">Integers</a></p>
@@ -80,11 +80,13 @@ else:
                 <p class="text always-left-text"> - <a href="#sets">Character Sets</a></p>
                 <p class="text always-left-text"> - <a href="#parity">Parity Error Checking</a></p>
                 <p class="text always-left-text"> - <a href="#majority">Majority Voting</a></p>
+                <p class="text always-left-text"> - <a href="#checksums">Checksums</a></p>
+                <p class="text always-left-text"> - <a href="#check-digits">Check Digits</a></p>
 		        <br><br>
 		    </div>
-		    <div class="flex3">
+		    <div class="flex3 flex-third">
 		    </div>
-		    <div class="flex4">
+		    <div class="flex4 flex-fourth">
 		    </div>
 		</div>
         </br>
@@ -220,8 +222,7 @@ friends.insert(1, "Jake")
 friends.remove("Jim")
 friends.sort()
 friends.reverse()
-friends.clear
-</code></pre>
+friends.clear</code></pre>
                 </div>
             </div>
         </div>
@@ -468,8 +469,11 @@ print("Comments are fun")
             </div>
             <div id="flex1">
                 <div class="code-container">
-                    <pre class="language-python"><code>
-</code></pre>
+                    <pre class="language-python"><code>try:
+    number = int(input("Enter a number: "))
+    print(number)
+except ValueError:
+    print("Invalid Input")</code></pre>
                 </div>
             </div>
         </div>	
@@ -481,8 +485,26 @@ print("Comments are fun")
         <div class="flex-container1">
             <div id="flex1">
                 <div class="code-container">
-                    <pre class="language-python"><code>
-</code></pre>
+                    <pre class="language-python"><code>employee_file_1 = open("employees.txt", "r")
+employee_file_2 = open("employees.txt", "r")
+
+if employee_file_1.readable():
+    print(employee_file_1.readlines()[1])
+else:
+    print("Not Readable!")
+
+print(employee_file_2.read())
+
+employee_file_1.close()
+employee_file_2.close()
+
+employee_file_3 = open("employees.txt", "a")
+employee_file_3.write("\nToby - Human Resources")
+employee_file_3.close()
+
+employee_file_4 = open("employees.txt", "w")
+employee_file_4.write("OVERWRITE")
+employee_file_4.close()</code></pre>
                 </div>
             </div>
             <div id="flex2">
@@ -504,8 +526,18 @@ print("Comments are fun")
             </div>
             <div id="flex1">
                 <div class="code-container">
-                    <pre class="language-python"><code>
-</code></pre>
+                    <pre class="language-python"><code>class Student:
+    def __init__(self, name, course, gender, age, year):
+        self.name = name
+        self.course = course
+        self.gender = gender
+        self.age = age
+        self.year = year
+
+    def print_all_infomation():
+        print("Name: " + self.name)
+        print("Course: " + self.course)
+        print("Name: " + str(self.age))</code></pre>
                 </div>
             </div>
         </div>	
@@ -517,8 +549,12 @@ print("Comments are fun")
         <div class="flex-container1">
             <div id="flex1">
                 <div class="code-container">
-                    <pre class="language-python"><code>
-</code></pre>
+                    <pre class="language-python"><code>from code_above import Student
+
+Ed = Student("Ed", "Computer Science with Artificial Intelligence (MEng)", 'm', 15, 1)
+
+print(Ed.course)
+Ed.print_all_infomation()</code></pre>
                 </div>
             </div>
             <div id="flex2">
@@ -558,8 +594,7 @@ print("Comments are fun")
                 <div class="code-container">
                     <pre class="language-python"><code>n = [-3, -2, -1, 0, 1, 2, 3]
 
-number = int(input("Type a whole number: "))
-</code></pre>
+number = int(input("Type a whole number: "))</code></pre>
                 </div>
             </div>
             <div id="flex2">
@@ -583,8 +618,7 @@ number = int(input("Type a whole number: "))
                 <div class="code-container">
                     <pre class="language-python"><code>n = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-number = abs(input("Type a number to convert to a natural number: "))
-</code></pre>
+number = abs(input("Type a number to convert to a natural number: "))</code></pre>
                 </div>
             </div>
         </div>	
@@ -598,8 +632,7 @@ number = abs(input("Type a number to convert to a natural number: "))
                 <div class="code-container">
                     <pre class="language-python"><code>n = [-3.6, -2.3, -1.1, 0.4, 1.0, 2.9, 3.5]
 
-number = float(input("Type a decimal number: "))
-</code></pre>
+number = float(input("Type a decimal number: "))</code></pre>
                 </div>
             </div>
             <div id="flex2">
@@ -625,8 +658,7 @@ number = float(input("Type a decimal number: "))
 
 print(frac(45, 54))
 print(frac(12, 47))
-print(frac('36.25'))
-</code></pre>
+print(frac('36.25'))</code></pre>
                 </div>
             </div>
         </div>	
@@ -644,8 +676,7 @@ d2 = Decimal(2)
 
 dot100 = decimal.Context(prec=100)
 
-print(d2.sqrt(dot100))
-</code></pre>
+print(d2.sqrt(dot100))</code></pre>
                 </div>
             </div>
             <div id="flex2">
@@ -683,8 +714,7 @@ print(fruit[3])</code></pre>
             <div id="flex1">
                 <div class="code-container">
                     <pre class="language-python"><code>fruit = ["Banana", "Apple", "Lime", "Pear", "Grape"]
-print("The list of fruit has " + len(fruit) + " items.")
-</code></pre>
+print("The list of fruit has " + len(fruit) + " items.")</code></pre>
                 </div>
             </div>
             <div id="flex2">
@@ -808,6 +838,80 @@ print(true_data)</code></pre>
             <div id="flex2">
                 <div class="vertical-center">
                     <p class="text right-text">Majority voting is a system that requires each bit to be sent 3 times. If a bit value is flipped during transmission over a noisy line, the receiving computer would use the majority rule and would assume that the two bits that have not changed are correct.</p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <!--CHECKSUMS-->
+        <span id="checksums" class="title" >print("Checksums")<span id="flash">_</span></span>
+        <span id="cog31"><img class="cog" src="img/cog2.png"></span>
+        </br></br>
+        <div class="flex-container1">
+            <div id="flex2">
+                <div class="vertical-center">
+                    <p class="text left-text">A checksum is a mathematical algorithm applied to a packet of data. The result is also sent with the data. The algorithm is applied at the receiving end and the checksum should agree with the checksum sent.</p>
+                </div>
+            </div>
+            <div id="flex1">
+                <div class="code-container">
+                    <pre class="language-python"><code>binary_string = input("Enter x5 8-bit binary values: ")
+
+binary_string = binary_string.replace(' ', '')
+
+checksum = int(binary_string[:8], 2)
+
+binary_string_1 = binary_string[8:16]
+binary_string_2 = binary_string[16:24]
+binary_string_3 = binary_string[24:32]
+binary_string_4 = binary_string[32:40]
+
+correct_checksum = int(binary_string_1, 2) + int(binary_string_2, 2) + int(binary_string_3, 2) + int(binary_string_4, 2)
+
+if str(correct_checksum) == str(checksum):
+    print("Correct!")
+else:
+    print("Data is corrupt...")</code></pre>
+                </div>
+            </div>
+        </div>  
+        <br><br>
+        <!--CHECK DIGIT-->
+        <span id="check-digits" class="title" >print("Check Digits")<span id="flash">_</span></span>
+        <span id="cog30"><img class="cog" src="img/cog2.png"></span>
+        </br></br>
+        <div class="flex-container1">
+            <div id="flex1">
+                <div class="code-container">
+                    <pre class="language-python"><code>isbn = input("Insert the ISBN: ").replace("-", "")
+
+digit1 = int(isbn[0]) * 1
+digit2 = int(isbn[1]) * 3
+digit3 = int(isbn[2]) * 1
+digit4 = int(isbn[3]) * 3
+digit5 = int(isbn[4]) * 1
+digit6 = int(isbn[5]) * 3
+digit7 = int(isbn[6]) * 1
+digit8 = int(isbn[7]) * 3
+digit9 = int(isbn[8]) * 1
+digit10 = int(isbn[9]) * 3
+digit11 = int(isbn[10]) * 1
+digit12 = int(isbn[11]) * 3
+digit13 = int(isbn[12]) 
+
+totalOf12 = digit1 + digit2 + digit3 + digit4 + digit5 + digit6 + digit7 + digit8 + digit9 + digit10 + digit11 + digit12
+
+maybe13 = totalOf12 % 10
+maybe13 = 10 - maybe13
+
+if maybe13 == int(digit13):
+    print("Great!")
+else:
+    print("Incorrect!")</code></pre>
+                </div>
+            </div>
+            <div id="flex2">
+                <div class="vertical-center">
+                    <p class="text right-text">A check digit is similar to a checksum, and is an additional digit at the end of a string of other numbers designed to check for mistakes in input or transmission. A common example is ISBN codes, which is a 13-digit number printed with the barcode on a book. The first 12 digits are the unique item number. The 13th digit is the check digit. Here is the code for a program to check ISBN codes.</p>
                 </div>
             </div>
         </div>

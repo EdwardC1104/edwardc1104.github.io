@@ -112,6 +112,22 @@ p > a {
   }
 }
 
+.flex-top {
+  order: 0;
+}
+
+.flex-second {
+  order: 1;
+}
+
+.flex-third {
+  order: 2;
+}
+
+.flex-fourth {
+  order: 3;
+}
+
 .flex-container2 {
   display: flex;
   flex-wrap: wrap;
