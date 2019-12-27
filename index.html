@@ -90,7 +90,13 @@ else:
 		    </div>
 		</div>
         </br>
-        
+        <!--  _____   __     __  _______   _    _    ____    _   _ 
+             |  __ \  \ \   / / |__   __| | |  | |  / __ \  | \ | |
+             | |__) |  \ \_/ /     | |    | |__| | | |  | | |  \| |
+             |  ___/    \   /      | |    |  __  | | |  | | | . ` |
+             | |         | |       | |    | |  | | | |__| | | |\  |
+             |_|         |_|       |_|    |_|  |_|  \____/  |_| \_|
+        -->
         <h2 class="subtitle">Python</h2>
         <br>
         <!--VARIABLES-->
@@ -452,7 +458,7 @@ print("Comments are fun")
             </div>
             <div id="flex2">
                 <div class="vertical-center">
-                    <p class="text right-text"></p>
+                    <p class="text right-text">Comments are used to write notes to make code easier to understand and also to temporarily remove lines, in order to find bugs.</p>
                 </div>
             </div>
         </div>
@@ -464,7 +470,7 @@ print("Comments are fun")
         <div class="flex-container1">
             <div id="flex2">
                 <div class="vertical-center">
-                    <p class="text left-text"></p>
+                    <p class="text left-text">The program will try the code in the <i>try</i> section, but if it returns an error, it will run the code in the <i>except</i> section. You can also specify the error which will cause the <i>except</i> section to run and have multiple error options.</p>
                 </div>
             </div>
             <div id="flex1">
@@ -473,7 +479,9 @@ print("Comments are fun")
     number = int(input("Enter a number: "))
     print(number)
 except ValueError:
-    print("Invalid Input")</code></pre>
+    print("Invalid Input")
+except:
+    print("A different error")</code></pre>
                 </div>
             </div>
         </div>	
@@ -509,7 +517,10 @@ employee_file_4.close()</code></pre>
             </div>
             <div id="flex2">
                 <div class="vertical-center">
-                    <p class="text right-text"></p>
+                    <p class="text right-text">"x" - Create - will create a file, returns an error if the file exists</br></br>
+"a" - Append - adds to the file, creates a file if it does not exist</br></br>
+"w" - Write - overwrites the file, creates a file if it does not exist</br></br>
+"r" - Read - will read the contents of a file, returns an error if the file does not exist</p>
                 </div>
             </div>
         </div>
@@ -521,9 +532,31 @@ employee_file_4.close()</code></pre>
         <div class="flex-container1">
             <div id="flex2">
                 <div class="vertical-center">
-                    <p class="text left-text"></p>
+                    <p class="text left-text">A class is a code template for creating objects. The <i>__init__()</i> function is used to assign values to object properties, or other operations that are necessary to do when the object is being created. Classes make a program for scalable, as you can assign and control lots of data easily. Using classes makes your program object-orientated.</p>
                 </div>
             </div>
+            <div id="flex1">
+                <div class="code-container">
+                    <pre class="language-python"><code>class Student:
+    def __init__(self, name, course, gender, age, year):
+        self.name = name
+        self.course = course
+        self.gender = gender
+        self.age = age
+
+student1 = Student("Jake", "Rocket Science", "Male", 14)
+
+print(student1.course)
+</code></pre>
+                </div>
+            </div>
+        </div>	
+        <br><br>
+        <!--OBJECT FUNCTIONS-->
+        <span id="objects" class="title" >print("Object Functions")<span id="flash">_</span></span>
+        <span id="cog18"><img class="cog" src="img/cog2.png"></span>
+        </br></br>
+        <div class="flex-container1">
             <div id="flex1">
                 <div class="code-container">
                     <pre class="language-python"><code>class Student:
@@ -537,29 +570,16 @@ employee_file_4.close()</code></pre>
     def print_all_infomation():
         print("Name: " + self.name)
         print("Course: " + self.course)
-        print("Name: " + str(self.age))</code></pre>
-                </div>
-            </div>
-        </div>	
-        <br><br>
-        <!--OBJECT FUNCTIONS-->
-        <span id="objects" class="title" >print("Object Functions")<span id="flash">_</span></span>
-        <span id="cog18"><img class="cog" src="img/cog2.png"></span>
-        </br></br>
-        <div class="flex-container1">
-            <div id="flex1">
-                <div class="code-container">
-                    <pre class="language-python"><code>from code_above import Student
+        print("Age: " + str(self.age))
 
-Ed = Student("Ed", "Computer Science with Artificial Intelligence (MEng)", 'm', 15, 1)
+student2 = Student("Laura", "Neuroscience", "Female", 15)
 
-print(Ed.course)
-Ed.print_all_infomation()</code></pre>
+student2.print_all_infomation()</code></pre>
                 </div>
             </div>
             <div id="flex2">
                 <div class="vertical-center">
-                    <p class="text right-text"></p>
+                    <p class="text right-text">Object functions or methods have access to all the data contained in the class. They can access and modify any data previously set on self. They need to be run as an instance of the class, because they use self.</p>
                 </div>
             </div>
         </div>
@@ -571,18 +591,53 @@ Ed.print_all_infomation()</code></pre>
         <div class="flex-container1">
             <div id="flex2">
                 <div class="vertical-center">
-                    <p class="text left-text"></p>
+                    <p class="text left-text">Inheritance gives you the ability to take all the functions in a class and add them to a seperate class. You can override a function by rewriting it with your change and you can add new functions normalling. You just have to include it when you declare the class and possibly import it if the class is in a seperate file.</p>
                 </div>
             </div>
             <div id="flex1">
                 <div class="code-container">
-                    <pre class="language-python"><code>
-</code></pre>
+                    <pre class="language-python"><code>class Chef:
+
+    def make_chicken(self):
+        print("The chef makes chicken")
+
+    def make_salad(self):
+        print("The chef makes salad")
+
+    def make_special_dish(self):
+        print("The chef makes bbq ribs")
+
+class ChineseChef(Chef):
+
+    def make_orange_chicken(self):
+        print("The chef makes orange chicken")
+
+    def make_special_dish(self):
+        print("The chef makes orange chicken")
+
+myChef = Chef()
+myChineseChef = ChineseChef()
+
+myChef.make_special_dish()
+myChineseChef.make_special_dish()</code></pre>
                 </div>
             </div>
         </div>	
         <br><br>
         <br><br>
+        <!--                                      _____       _______                                     
+                                                 |  __ \   /\|__   __|/\                                  
+                                                 | |  | | /  \  | |  /  \                                 
+                                                 | |  | |/ /\ \ | | / /\ \                                
+                                                 | |__| / ____ \| |/ ____ \ 
+                                                 |_____/_/____\_\_/_/____\_\                             
+              _____  ______ _____  _____  ______  _____ ______ _   _ _______    _______ _____ ____  _   _ 
+             |  __ \|  ____|  __ \|  __ \|  ____|/ ____|  ____| \ | |__   __|/\|__   __|_   _/ __ \| \ | |
+             | |__) | |__  | |__) | |__) | |__  | (___ | |__  |  \| |  | |  /  \  | |    | || |  | |  \| |
+             |  _  /|  __| |  ___/|  _  /|  __|  \___ \|  __| | . ` |  | | / /\ \ | |    | || |  | | . ` |
+             | | \ \| |____| |    | | \ \| |____ ____) | |____| |\  |  | |/ ____ \| |   _| || |__| | |\  |
+             |_|  \_\______|_|    |_|  \_\______|_____/|______|_| \_|  |_/_/    \_\_|  |_____\____/|_| \_|
+        -->
         <h2 class="subtitle">Data Representation</h2>
         <br>
         <!--INTEGERS-->
