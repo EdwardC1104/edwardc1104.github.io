@@ -87,6 +87,8 @@ else:
                 <p class="text always-left-text"> - <a href="#long-multiplication">Binary Long Multiplication</a></p>
                 <p class="text always-left-text"> - <a href="#signed-and-unsigned">Signed and Unsigned</a></p>
                 <p class="text always-left-text"> - <a href="#twos-complement">Two's Complement</a></p>
+                <p class="text always-left-text"> - <a href="#subtraction">Binary Subtraction</a></p>
+                <p class="text always-left-text"> - <a href="#fixed-point">Fixed Point Binary Numbers</a></p>
 		        <br><br>
 		    </div>
 		    <div class="flex3 flex-third">
@@ -1079,7 +1081,7 @@ else:
         <div class="flex-container1">
             <div id="flex2">
                 <div class="vertical-center">
-                    <p class="text left-text">Two's Complements is just an alternative way of representing negative binary numbers. To convert a negaitve number to binary, make the number a positive binary value, then flip all the bits and add 1.</p>
+                    <p class="text left-text">Two's Complements is just an alternative way of representing negative binary numbers. To convert a negative number to binary, make the number a positive binary value, then flip all the bits and add 1.</p>
                 </div>
             </div>
             <div id="flex1">
@@ -1094,6 +1096,47 @@ else:
     '11111110':'-2',
     '11111101':'-3',
 }</code></pre>
+                </div>
+            </div>
+        </div>  
+        <br><br>
+        <!--BINARY SUBTRACTION-->
+        <span id="subtraction" class="title" >print("Binary Subtraction")<span id="flash">_</span></span>
+        <span id="cog38"><img class="cog" src="img/cog2.png"></span>
+        </br></br>
+        <div class="flex-container1">
+            <div id="flex1">
+                <div class="code-container">
+                    <pre class="language-python"><code>num1 = input("First binary number to subtract: ")
+num2 = input("Second binary number to subtract: ")
+
+ans = bin(int(num1,2) - int(num2,2))
+
+print(ans.replace("0b", ""))</code></pre>
+                </div>
+            </div>
+            <div id="flex2">
+                <div class="vertical-center">
+                    <p class="text right-text">To subtract binary numbers, you follow the same process as adding two numbers, but you first have to convert the second number to a negative using Two's Complement.</p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <!--FIXED POINT BINARY NUMBERS-->
+        <span id="fixed-point" class="title" >print("Fixed Point Binary Numbers")<span id="flash">_</span></span>
+        <span id="cog39"><img class="cog" src="img/cog2.png"></span>
+        </br></br>
+        <div class="flex-container1">
+            <div id="flex2">
+                <div class="vertical-center">
+                    <p class="text left-text">Fixed point binary is a way of representing fractional or decimal values in binary. The binary "number line" just continues to the right halfing each time.</p>
+                </div>
+            </div>
+            <div id="flex1">
+                <div class="code-container">
+                    <pre class="language-python"><code>number_line = [8, 4, 2, 1, 1/2, 1/4, 1/8]
+
+print("5.75 = 5 + 1/2 + 1/4 = 101 + .1 + .01 = 101.11")</code></pre>
                 </div>
             </div>
         </div>  
