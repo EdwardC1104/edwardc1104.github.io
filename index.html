@@ -33,7 +33,7 @@ else:
             </div>
             <div id="flex2">
                 <div class="vertical-center">
-                    <p class="text">This is just a place to store all of my GCSE and AS Level Computer Science work!</p>
+                    <p class="text">This is a place to store all of my GCSE and AS Level Computer Science work!</p>
                 </div>
             </div>
         </div>
@@ -82,6 +82,11 @@ else:
                 <p class="text always-left-text"> - <a href="#majority">Majority Voting</a></p>
                 <p class="text always-left-text"> - <a href="#checksums">Checksums</a></p>
                 <p class="text always-left-text"> - <a href="#check-digits">Check Digits</a></p>
+                <p class="text always-left-text"> - <a href="#addition">Binary Addition</a></p>
+                <p class="text always-left-text"> - <a href="#multiplication">Binary Multiplication</a></p>
+                <p class="text always-left-text"> - <a href="#long-multiplication">Binary Long Multiplication</a></p>
+                <p class="text always-left-text"> - <a href="#signed-and-unsigned">Signed and Unsigned</a></p>
+                <p class="text always-left-text"> - <a href="#twos-complement">Two's Complement</a></p>
 		        <br><br>
 		    </div>
 		    <div class="flex3 flex-third">
@@ -136,7 +141,7 @@ print("""Multi...
             </div>
             <div id="flex2">
                 <div class="vertical-center">
-                    <p class="text right-text">String literals in python are surrounded by either single quotation marks, or double quotation marks. They are displayed using <i>print()</i>.</p>
+                    <p class="text right-text">String literals in Python are surrounded by either single quotation marks or double quotation marks. They are displayed using <i>print()</i>.</p>
                 </div>
             </div>
         </div>
@@ -148,7 +153,7 @@ print("""Multi...
         <div class="flex-container1">
             <div id="flex2">
                 <div class="vertical-center">
-                    <p class="text left-text">In Python, the operators for numbers are +, -, *, /. To print a number you first have to convert it to a string using <i>str()</i>. By importing <i>math</i>, you get lots of extra maths functions that aren't native to Python, such as rounding, powers and roots. You convert a string to integer by using <i>int()</i> and you use <i>float()</i> for decimals.</p>
+                    <p class="text left-text">In Python, the operators for numbers are +, -, *, /. To print a number you, convert it to a string using <i>str()</i>. By importing math, you get lots of extra maths functions that aren't native to Python, such as rounding, powers and roots. You convert a string to an integer by, using <i>int()</i> and you use <i>float()</i> for decimals.</p>
                 </div>
             </div>
             <div id="flex1">
@@ -197,7 +202,7 @@ print("Hello " + name + "! You are " + age + " years old!")</code></pre>
             </div>
             <div id="flex2">
                 <div class="vertical-center">
-                    <p class="text right-text">Python can recieve inputs from the user and then set that input as a variable for the program to use. If your input is a number, remember to use <i>int()</i>.</p>
+                    <p class="text right-text">Python can receive inputs from the user and then set that input as a variable for the program to use. If your input is a number, remember to use <i>int()</i>.</p>
                 </div>
             </div>
         </div>
@@ -209,7 +214,7 @@ print("Hello " + name + "! You are " + age + " years old!")</code></pre>
         <div class="flex-container1">
             <div id="flex2">
                 <div class="vertical-center">
-                    <p class="text left-text">A Python list stores, well, a list of data. It can contain any datatype and it can be altered throughtout the program. You can print the whole list or just selected items and it can be order and reversed. </p>
+                    <p class="text left-text">A Python list stores, well, a list of data. It can contain any data type, and it can be altered throughout the program. You can print the whole list or just selected items, and it can be ordered and reversed.</p>
                 </div>
             </div>
             <div id="flex1">
@@ -240,14 +245,14 @@ friends.clear</code></pre>
         <div class="flex-container1">
             <div id="flex1">
                 <div class="code-container">
-                    <pre class="language-python"><code>coordinates = (4, 5), (6,7), (80, 34)
+                    <pre class="language-python"><code>coordinates = ((4, 5), (6,7), (80, 34))
 print(coordinates[1])
 print(coordinates[1][1])</code></pre>
                 </div>
             </div>
             <div id="flex2">
                 <div class="vertical-center">
-                    <p class="text right-text"></p>
+                    <p class="text right-text">A tuple is a collection which is ordered and unchangeable. In Python, tuples are written with round brackets. You can access tuple items by referring to the index number.</p>
                 </div>
             </div>
         </div>
@@ -259,19 +264,19 @@ print(coordinates[1][1])</code></pre>
         <div class="flex-container1">
             <div id="flex2">
                 <div class="vertical-center">
-                    <p class="text left-text"></p>
+                    <p class="text left-text">A function is a block of code which only runs when it is called. You can pass parameters or argument into a function. Then it can return data as a result. If you do not know how many arguments that will be passed into your function, add a * before the parameter name in the function definition. Default values can be set by making a parameter equal a piece of data.</p>
                 </div>
             </div>
             <div id="flex1">
                 <div class="code-container">
-                    <pre class="language-python"><code>def sayhello():
+                    <pre class="language-python"><code>def sayHello():
     print("Hello User")
 
 sayhello()
 sayhello()
 
 
-def sayHelloTo(name, age):
+def sayHelloTo(name = "Bob", age):
      return "Hello " + name + ", you are " + str(age)
 
 print(sayHelloTo("Mike", "56"))
@@ -311,7 +316,7 @@ print(max_num(134,78,152))</code></pre>
             </div>
             <div id="flex2">
                 <div class="vertical-center">
-                    <p class="text right-text"></p>
+                    <p class="text right-text">If the condition is met then, the indented block of code will run. An elif statement will only be tested if all the conditions before that are not met. The else statement catches anything which isn't caught by all the previous conditions.</p>
                 </div>
             </div>
         </div>
@@ -323,7 +328,7 @@ print(max_num(134,78,152))</code></pre>
         <div class="flex-container1">
             <div id="flex2">
                 <div class="vertical-center">
-                    <p class="text left-text"></p>
+                    <p class="text left-text">A dictionary is a collection which is unordered, changeable and indexed. In Python dictionaries are written with curly brackets, and they have keys and values.</p>
                 </div>
             </div>
             <div id="flex1">
@@ -360,7 +365,7 @@ while True:
             </div>
             <div id="flex2">
                 <div class="vertical-center">
-                    <p class="text right-text"></p>
+                    <p class="text right-text">The indented code will keep repeating until the condition is no longer true.</p>
                 </div>
             </div>
         </div>
@@ -372,7 +377,7 @@ while True:
         <div class="flex-container1">
             <div id="flex2">
                 <div class="vertical-center">
-                    <p class="text left-text"></p>
+                    <p class="text left-text">A for loop is used for iterating over a sequence: that can be a list, a tuple, a dictionary, or a string.</p>
                 </div>
             </div>
             <div id="flex1">
@@ -408,7 +413,7 @@ print(power(3,3))</code></pre>
             </div>
             <div id="flex2">
                 <div class="vertical-center">
-                    <p class="text right-text"></p>
+                    <p class="text right-text">An exponent function allows you to raise a number to a power.</p>
                 </div>
             </div>
         </div>
@@ -420,7 +425,7 @@ print(power(3,3))</code></pre>
         <div class="flex-container1">
             <div id="flex2">
                 <div class="vertical-center">
-                    <p class="text left-text"></p>
+                    <p class="text left-text">2D lists are simple lists in which all elements in that list are also lists. Nested loops are loops within loops.</p>
                 </div>
             </div>
             <div id="flex1">
@@ -458,7 +463,7 @@ print("Comments are fun")
             </div>
             <div id="flex2">
                 <div class="vertical-center">
-                    <p class="text right-text">Comments are used to write notes to make code easier to understand and also to temporarily remove lines, in order to find bugs.</p>
+                    <p class="text right-text">Comments are used to write notes to make code easier to understand and also to temporarily remove lines, to find bugs.</p>
                 </div>
             </div>
         </div>
@@ -532,7 +537,7 @@ employee_file_4.close()</code></pre>
         <div class="flex-container1">
             <div id="flex2">
                 <div class="vertical-center">
-                    <p class="text left-text">A class is a code template for creating objects. The <i>__init__()</i> function is used to assign values to object properties, or other operations that are necessary to do when the object is being created. Classes make a program for scalable, as you can assign and control lots of data easily. Using classes makes your program object-orientated.</p>
+                    <p class="text left-text">A class is a code template for creating objects. The <i>__init__()</i> function is used to assign values to object properties or other operations that are necessary to do when the object is being created. Classes make a program for scalable, as you can assign and control lots of data easily. Using classes makes your program object-orientated.</p>
                 </div>
             </div>
             <div id="flex1">
@@ -579,7 +584,7 @@ student2.print_all_infomation()</code></pre>
             </div>
             <div id="flex2">
                 <div class="vertical-center">
-                    <p class="text right-text">Object functions or methods have access to all the data contained in the class. They can access and modify any data previously set on self. They need to be run as an instance of the class, because they use self.</p>
+                    <p class="text right-text">Object functions or methods have access to all the data contained in the class. They can access and modify any data previously set on self. They need to be run as an instance of the class because they use self.</p>
                 </div>
             </div>
         </div>
@@ -591,7 +596,7 @@ student2.print_all_infomation()</code></pre>
         <div class="flex-container1">
             <div id="flex2">
                 <div class="vertical-center">
-                    <p class="text left-text">Inheritance gives you the ability to take all the functions in a class and add them to a seperate class. You can override a function by rewriting it with your change and you can add new functions normalling. You just have to include it when you declare the class and possibly import it if the class is in a seperate file.</p>
+                    <p class="text left-text">Inheritance gives you the ability to take all the functions in a class, and add them to a separate class. You can override a function by rewriting it with your change, and you can add new functions normally. You just have to include it when you declare the class, and possibly import it if the class is in a separate file.</p>
                 </div>
             </div>
             <div id="flex1">
@@ -774,7 +779,7 @@ print("The list of fruit has " + len(fruit) + " items.")</code></pre>
             </div>
             <div id="flex2">
                 <div class="vertical-center">
-                    <p class="text right-text">Cardinal numbers identify the size of the list. eg. I came third in the race out of 20 people.</p>
+                    <p class="text right-text">Cardinal numbers identify the size of the list. For example, I came third in the race out of 20 people.</p>
                 </div>
             </div>
         </div>
@@ -786,7 +791,7 @@ print("The list of fruit has " + len(fruit) + " items.")</code></pre>
         <div class="flex-container1">
             <div id="flex2">
                 <div class="vertical-center">
-                    <p class="text left-text">A bit is a Binary digit and can takes the two values 0 or 1. Different units are used for larger files as the number for a 4k movie would be thousands of digits long.</p>
+                    <p class="text left-text">A bit is a binary digit and can take the two values 0 or 1. Different units are used for larger files as the number for a 4k movie would be thousands of digits long.</p>
                 </div>
             </div>
             <div id="flex1">
@@ -841,7 +846,7 @@ print("Convert me to 32-bit Unicode!".encode("utf-32")</code></pre>
         <div class="flex-container1">
             <div id="flex2">
                 <div class="vertical-center">
-                    <p class="text left-text">A parity bit is an additional bit that is used to check that the other bits are transmitted correctly. If using 7-bit ASCII there is an extra bit available to be used for parity. The total number of 1’s is counted in each byte including the parity bit equalled an odd or even number.</p>
+                    <p class="text left-text">A parity bit is an additional bit that is used to check that the other bits are transmitted correctly. If using 7-bit ASCII, there is an extra bit available to be used for parity. The total number of 1’s is counted in each byte, including the parity bit, equalled an odd or even number.</p>
                 </div>
             </div>
             <div id="flex1">
@@ -904,7 +909,7 @@ print(true_data)</code></pre>
         <div class="flex-container1">
             <div id="flex2">
                 <div class="vertical-center">
-                    <p class="text left-text">A checksum is a mathematical algorithm applied to a packet of data. The result is also sent with the data. The algorithm is applied at the receiving end and the checksum should agree with the checksum sent.</p>
+                    <p class="text left-text">A checksum is a mathematical algorithm applied to a packet of data. The result is also sent with the data. The algorithm is applied at the receiving, end and the checksum should agree with the checksum sent.</p>
                 </div>
             </div>
             <div id="flex1">
@@ -971,9 +976,130 @@ else:
             </div>
         </div>
         <br><br>
+        <!--BINARY ADDITION-->
+        <span id="addition" class="title" >print("Binary Addition")<span id="flash">_</span></span>
+        <span id="cog33"><img class="cog" src="img/cog2.png"></span>
+        </br></br>
+        <div class="flex-container1">
+            <div id="flex2">
+                <div class="vertical-center">
+                    <p class="text left-text">Addition in binary works on the same principles as denary addition. You add the digits in the same column from right to left. If the digits together equal a number larger than the base value, then one is carried over to the next column.</p>
+                </div>
+            </div>
+            <div id="flex1">
+                <div class="code-container">
+                    <pre class="language-python"><code>num1 = input("First binary number to add: ")
+num2 = input("Second binary number to add: ")
+
+ans = bin(int(num1,2) + int(num2,2))
+
+print(ans.replace("0b", ""))</code></pre>
+                </div>
+            </div>
+        </div>  
+        <br><br>
+        <!--BINARY MULTIPLICATION-->
+        <span id="multiplication" class="title" >print("Binary Multiplication")<span id="flash">_</span></span>
+        <span id="cog34"><img class="cog" src="img/cog2.png"></span>
+        </br></br>
+        <div class="flex-container1">
+            <div id="flex1">
+                <div class="code-container">
+                    <pre class="language-python"><code>num1 = input("First binary number to multiply: ")
+num2 = input("Second binary number to multiply: ")
+
+ans = bin(int(num1,2) * int(num2,2))
+
+print(ans.replace("0b", ""))</code></pre>
+                </div>
+            </div>
+            <div id="flex2">
+                <div class="vertical-center">
+                    <p class="text right-text">You use the same principle for binary multiplication as for denary multiplication, moving a number one place to the left multiplies it by the base (10 or 2). In binary, you have to split the number you want to multiply by into steps that are powers of 2. eg. 17 x 14 = 17 x 8 + 17 x 4 + 17 x 2</p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <!--BINARY LONG MULTIPLICATION-->
+        <span id="long-multiplication" class="title" >print("Binary Long Multiplication")<span id="flash">_</span></span>
+        <span id="cog35"><img class="cog" src="img/cog2.png"></span>
+        </br></br>
+        <div class="flex-container1">
+            <div id="flex2">
+                <div class="vertical-center">
+                    <p class="text left-text">Long multiplication is the exact same as in denary. The only change is that the addition and any carrying is done in base 2.</p>
+                </div>
+            </div>
+            <div id="flex1">
+                <div class="code-container">
+                    <pre class="language-python"><code>print("""
+
+        1 0 0 1 0
+     x      1 0 1
+    ----------------
+        1 0 0 1 0
+      0 0 0 0 0    +
+    1 0 0 1 0
+    ----------------
+    1 0 1 1 0 1 0
+
+""")</code></pre>
+                </div>
+            </div>
+        </div>  
+        <br><br>
+        <!--SIGNED AND UNSIGNED-->
+        <span id="signed-and-unsigned" class="title" >print("Signed and Unsigned")<span id="flash">_</span></span>
+        <span id="cog36"><img class="cog" src="img/cog2.png"></span>
+        </br></br>
+        <div class="flex-container1">
+            <div id="flex1">
+                <div class="code-container">
+                    <pre class="language-python"><code>isSigned = True
+
+if not isSigned:
+    print("00000000 = 0")
+    print("11111111 = 255")
+else:
+    print("00000000 = 0")
+    print("11111111 = -127")</code></pre>
+                </div>
+            </div>
+            <div id="flex2">
+                <div class="vertical-center">
+                    <p class="text right-text">An 8-bit unsigned number has a range of 0-255. A signed 8-bit number has a range of -127 to 127 because the most significant bit represents the sign: 1 being negative and 0 being positive. This leaves 7-bits for the number.</p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <!--TWO'S COMPLEMENT-->
+        <span id="twos-complement" class="title" >print("Two's Complement")<span id="flash">_</span></span>
+        <span id="cog37"><img class="cog" src="img/cog2.png"></span>
+        </br></br>
+        <div class="flex-container1">
+            <div id="flex2">
+                <div class="vertical-center">
+                    <p class="text left-text">Two's Complements is just an alternative way of representing negative binary numbers. To convert a negaitve number to binary, make the number a positive binary value, then flip all the bits and add 1.</p>
+                </div>
+            </div>
+            <div id="flex1">
+                <div class="code-container">
+                    <pre class="language-python"><code>twos-complement = {
+
+    '00000011':'3',
+    '00000010':'2',
+    '00000001':'1',
+
+    '11111111':'-1',
+    '11111110':'-2',
+    '11111101':'-3',
+}</code></pre>
+                </div>
+            </div>
+        </div>  
+        <br><br>
         <script src="js/scroll-actions.js"></script>
         <script src="js/smooth-scroll.js"></script>
-        <script src="js/scroll-offset.js"></script>
         <script src="js/prism.js"></script>
     </body>
 </html>
