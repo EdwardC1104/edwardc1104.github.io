@@ -67,16 +67,25 @@ else:
 		        <br><br>
 		    </div>
         	<div class="flex2 flex-second">
-		        <p class="text always-left-text"><b>Data Representation</b></p>
-		    	</br>
-		        <p class="text always-left-text"> - <a href="#integer">Integers</a></p>
-		        <p class="text always-left-text"> - <a href="#natural">Natural Numbers</a></p>
-		        <p class="text always-left-text"> - <a href="#real">Real Numbers</a></p>
-		        <p class="text always-left-text"> - <a href="#rational">Rational Numbers</a></p>
-		        <p class="text always-left-text"> - <a href="#irrational">Irratioanl Numbers</a></p>
-		        <p class="text always-left-text"> - <a href="#ordinal">Ordinal Numbers</a></p>
-		        <p class="text always-left-text"> - <a href="#cardinal">Cardinal Numbers</a></p>
-				<p class="text always-left-text"> - <a href="#units">Data Storage Units</a></p>
+                <p class="text always-left-text"><b>SQL</b></p>
+                </br>
+                <p class="text always-left-text"> - <a href="#select">SELECT and FROM</a></p>
+                <p class="text always-left-text"> - <a href="#select">WHERE</a></p>
+                <p class="text always-left-text"> - <a href="#select">LIKE</a></p>
+                <p class="text always-left-text"> - <a href="#select">AND, OR and NOT</a></p>
+                <br><br>                
+		    </div>
+		    <div class="flex3 flex-third">
+                <p class="text always-left-text"><b>Data Representation</b></p>
+                </br>
+                <p class="text always-left-text"> - <a href="#integer">Integers</a></p>
+                <p class="text always-left-text"> - <a href="#natural">Natural Numbers</a></p>
+                <p class="text always-left-text"> - <a href="#real">Real Numbers</a></p>
+                <p class="text always-left-text"> - <a href="#rational">Rational Numbers</a></p>
+                <p class="text always-left-text"> - <a href="#irrational">Irratioanl Numbers</a></p>
+                <p class="text always-left-text"> - <a href="#ordinal">Ordinal Numbers</a></p>
+                <p class="text always-left-text"> - <a href="#cardinal">Cardinal Numbers</a></p>
+                <p class="text always-left-text"> - <a href="#units">Data Storage Units</a></p>
                 <p class="text always-left-text"> - <a href="#sets">Character Sets</a></p>
                 <p class="text always-left-text"> - <a href="#parity">Parity Error Checking</a></p>
                 <p class="text always-left-text"> - <a href="#majority">Majority Voting</a></p>
@@ -89,16 +98,20 @@ else:
                 <p class="text always-left-text"> - <a href="#twos-complement">Two's Complement</a></p>
                 <p class="text always-left-text"> - <a href="#subtraction">Binary Subtraction</a></p>
                 <p class="text always-left-text"> - <a href="#fixed-point">Fixed Point Binary Numbers</a></p>
-		        <br><br>
-		    </div>
-		    <div class="flex3 flex-third">
-				<p class="text always-left-text"><b>SQL</b></p>
-		        </br>
-		        <p class="text always-left-text"> - <a href="#select">SELECT and FROM</a></p>
-		        <p class="text always-left-text"> - <a href="#select">WHERE</a></p>
-		        <p class="text always-left-text"> - <a href="#select">LIKE</a></p>
-		        <p class="text always-left-text"> - <a href="#select">AND, OR and NOT</a></p>
-		    </div>
+                <p class="text always-left-text"> - <a href="#floating-point">Floating Point Binary Numbers</a></p>
+                <p class="text always-left-text"> - <a href="#neg-flt-to-dec">Negative Floating Point To Decimal</a></p>
+                <p class="text always-left-text"> - <a href="#negative-exponents">Negative Exponents</a></p>
+                <p class="text always-left-text"> - <a href="#normalisation">Normalisation</a></p>
+                <p class="text always-left-text"> - <a href="#neg-nor">Normalising Negative Binary</a></p>
+                <p class="text always-left-text"> - <a href="#dec-to-nor">Decimal To Normalised Floating Point</a></p>
+                <p class="text always-left-text"> - <a href="#neg-dec-nor">Negative Decimal To Normalised Floating Point</a></p>
+                <p class="text always-left-text"> - <a href="#rounding-errors">Rounding Errors</a></p>
+                <p class="text always-left-text"> - <a href="#overflow">Overflow</a></p>
+                <p class="text always-left-text"> - <a href="#underflow">Underflow</a></p>
+                <p class="text always-left-text"> - <a href="#bitmap">Bitmap Graphics</a></p>
+                <p class="text always-left-text"> - <a href="#vector">Vector Graphics</a></p>
+                <br><br>
+            </div>
 		    <div class="flex4 flex-fourth">
 		    </div>
 		</div>
@@ -1143,6 +1156,226 @@ print(ans.replace("0b", ""))</code></pre>
                     <pre class="language-python"><code>number_line = [8, 4, 2, 1, 1/2, 1/4, 1/8]
 
 print("5.75 = 5 + 1/2 + 1/4 = 101 + .1 + .01 = 101.11")</code></pre>
+                </div>
+            </div>
+        </div>  
+        <br><br>
+        <!--FLOATING POINT BINARY NUMBERS-->
+        <span id="floating-point" class="title" >print("Floating Point Binary Numbers")<span id="flash">_</span></span>
+        <span id="cog40"><img class="cog" src="img/cog2.png"></span>
+        </br></br>
+        <div class="flex-container1">
+            <div id="flex1">
+                <div class="code-container">
+                    <pre class="language-python"><code>#   Sign - Mantissa - Exponent
+
+print("0 . 1011010 0011 = 5.625")
+
+# Assuming 8-bit mantissa and 4 bit exponent</code></pre>
+                </div>
+            </div>
+            <div id="flex2">
+                <div class="vertical-center">
+                    <p class="text right-text">When decimal numbers become very large, they are held in the format <i>m x 10<sup>n</sup></i> where <i>m</i> is known as the mantissa, and <i>n</i> is the exponent. The example represents the number 0.1011010 x 2<sup>3</sup> since the exponent is 3 in decimal. This is 101.1010 or 4 + 1 +0.5 + 0.125 = 5.625</p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <!--NEGATIVE FLOATING POINT BINARY TO DECIMAL-->
+        <span id="neg-flt-to-dec" class="title" >print("Negative Floating Point To Decimal")<span id="flash">_</span></span>
+        <span id="cog41"><img class="cog" src="img/cog2.png"></span>
+        </br></br>
+        <div class="flex-container1">
+            <div id="flex2">
+                <div class="vertical-center">
+                    <p class="text left-text">Find the twos complement of the mantissa. Translate the exponent to decimal. The binary point of the mantissa has to be moved right by the value of the exponent to multiply it by 2 raised to the power of the exponent.</p>
+                </div>
+            </div>
+            <div id="flex1">
+                <div class="code-container">
+                    <pre class="language-python"><code>#   Sign - Mantissa - Exponent
+
+print("1 . 0010100 0011 = -6.75")
+ 
+# Assuming an 8-bit, negative mantissa and a 4 bit, positive exponent</code></pre>
+                </div>
+            </div>
+        </div>  
+        <br><br>
+        <!--NEGATIVE EXPONENTS-->
+        <span id="negative-exponents" class="title" >print("Negative Exponents")<span id="flash">_</span></span>
+        <span id="cog42"><img class="cog" src="img/cog2.png"></span>
+        </br></br>
+        <div class="flex-container1">
+            <div id="flex1">
+                <div class="code-container">
+                    <pre class="language-python"><code>#   Sign - Mantissa - Exponent
+
+print("0 . 1100000 1110 = 0.1875")
+ 
+# Assuming an 8-bit mantissa and a 4 bit exponent</code></pre>
+                </div>
+            </div>
+            <div id="flex2">
+                <div class="vertical-center">
+                    <p class="text right-text">The leftmost bit of the exponent is always a sign bit, just as it is in the mantissa. If the exponent is negative, the binary point must be moved left instead of right.</p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <!--NORMALISATION-->
+        <span id="normalisation" class="title" >print("Normalisaiton")<span id="flash">_</span></span>
+        <span id="cog43"><img class="cog" src="img/cog2.png"></span>
+        </br></br>
+        <div class="flex-container1">
+            <div id="flex2">
+                <div class="vertical-center">
+                    <p class="text left-text">Normalisation is the process of moving the binary point of a floating point number to provide the maximum level of precision for a given number of bits. The first digit after the sign bit has to be a 1, so you subtract from the exponent in order to compensate for this.</p>
+                </div>
+            </div>
+            <div id="flex1">
+                <div class="code-container">
+                    <pre class="language-python"><code>
+print("0 . 0011010 0100 = 0 . 1101000 0010")
+print("0 . 0000111 0111 = 0 . 1110000 0011")
+ 
+# Assuming an 8-bit mantissa and a 4 bit exponent</code></pre>
+                </div>
+            </div>
+        </div>  
+        <br><br>
+        <!--NORMAILISING A NEGATIVE NUMBER-->
+        <span id="neg-nor" class="title" >print("Normalising Negative Binary")<span id="flash">_</span></span>
+        <span id="cog44"><img class="cog" src="img/cog2.png"></span>
+        </br></br>
+        <div class="flex-container1">
+            <div id="flex1">
+                <div class="code-container">
+                    <pre class="language-python"><code></code></pre>
+                </div>
+            </div>
+            <div id="flex2">
+                <div class="vertical-center">
+                    <p class="text right-text"></p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <!--DECIMAL TO NORMILISED FLOATING POINT-->
+        <span id="dec-to-nor" class="title" >print("Decimal To Normalised Floating Point")<span id="flash">_</span></span>
+        <span id="cog45"><img class="cog" src="img/cog2.png"></span>
+        </br></br>
+        <div class="flex-container1">
+            <div id="flex2">
+                <div class="vertical-center">
+                    <p class="text left-text"></p>
+                </div>
+            </div>
+            <div id="flex1">
+                <div class="code-container">
+                    <pre class="language-python"><code></code></pre>
+                </div>
+            </div>
+        </div>  
+        <br><br>
+        <!--NEGATIVE DECIMAL TO NORMILISED FLOATING POINT-->
+        <span id="neg-dec-nor" class="title" >print("Negative Decimal To Normalised Floating Point")<span id="flash">_</span></span>
+        <span id="cog46"><img class="cog" src="img/cog2.png"></span>
+        </br></br>
+        <div class="flex-container1">
+            <div id="flex1">
+                <div class="code-container">
+                    <pre class="language-python"><code></code></pre>
+                </div>
+            </div>
+            <div id="flex2">
+                <div class="vertical-center">
+                    <p class="text right-text"></p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <!--ROUNDING ERRORS-->
+        <span id="rounding-errors" class="title" >print("Rounding Errors")<span id="flash">_</span></span>
+        <span id="cog47"><img class="cog" src="img/cog2.png"></span>
+        </br></br>
+        <div class="flex-container1">
+            <div id="flex2">
+                <div class="vertical-center">
+                    <p class="text left-text">In the decimal system, 1/3 can never be represented completely accurately as a decimal number. Similarly, in the binary system some numbers can never be represented completely accurately.</p>
+                </div>
+            </div>
+            <div id="flex1">
+                <div class="code-container">
+                    <pre class="language-python"><code></code></pre>
+                </div>
+            </div>
+        </div>  
+        <br><br>
+        <!--OVERFLOW-->
+        <span id="overflow" class="title" >print("Overflow")<span id="flash">_</span></span>
+        <span id="cog48"><img class="cog" src="img/cog2.png"></span>
+        </br></br>
+        <div class="flex-container1">
+            <div id="flex1">
+                <div class="code-container">
+                    <pre class="language-python"><code></code></pre>
+                </div>
+            </div>
+            <div id="flex2">
+                <div class="vertical-center">
+                    <p class="text right-text">Overflow occurs when the result of a calculation is too large to be held in the number of bits allocated.</p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <!--UNDERFLOW-->
+        <span id="underflow" class="title" >print("Underflow")<span id="flash">_</span></span>
+        <span id="cog49"><img class="cog" src="img/cog2.png"></span>
+        </br></br>
+        <div class="flex-container1">
+            <div id="flex2">
+                <div class="vertical-center">
+                    <p class="text left-text">Underflow occurs when a number is too small to be represented in the number of bits allocated.</p>
+                </div>
+            </div>
+            <div id="flex1">
+                <div class="code-container">
+                    <pre class="language-python"><code></code></pre>
+                </div>
+            </div>
+        </div>  
+        <br><br>
+        <!--BITMAP GRAPHICS-->
+        <span id="bitmap" class="title" >print("Bitmap Graphics")<span id="flash">_</span></span>
+        <span id="cog50"><img class="cog" src="img/cog2.png"></span>
+        </br></br>
+        <div class="flex-container1">
+            <div id="flex1">
+                <div class="code-container">
+                    <pre class="language-python"><code></code></pre>
+                </div>
+            </div>
+            <div id="flex2">
+                <div class="vertical-center">
+                    <p class="text right-text">A bitmap image contains many picture elements that make up the whole image. A pixel is the smallest identifiable area of an image. Each pixel is attributed a binary value which represents a single colour.</p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <!--VECTOR GRAPHICS-->
+        <span id="vector" class="title" >print("Vector Graphics")<span id="flash">_</span></span>
+        <span id="cog49"><img class="cog" src="img/cog2.png"></span>
+        </br></br>
+        <div class="flex-container1">
+            <div id="flex2">
+                <div class="vertical-center">
+                    <p class="text left-text">Vector graphics are images that are defined in terms of 2D points, which are connected by lines and curves to form shapes. Each of these points has a definite position on the x and y-axis of the work plane and determines the direction of the path. Each path may have various properties including values for stroke color, shape, curve, thickness, and fill.</p>
+                </div>
+            </div>
+            <div id="flex1">
+                <div class="code-container">
+                    <pre class="language-python"><code></code></pre>
                 </div>
             </div>
         </div>  

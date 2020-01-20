@@ -140,19 +140,19 @@ p > a {
 }
 
 .flex-container2 > #flex1 {
-  min-width: 24%
+  min-width: 33%
 }
 
 .flex-container2 > #flex2 {
-  min-width: 24%
+  min-width: 33%
 }
 
 .flex-container2 > #flex3 {
-  min-width: 24%
+  min-width: 33%
 }
 
 .flex-container2 > #flex4 {
-  min-width: 24%
+  min-width: 33%
 }
 
 @media (max-device-width: 812px) {
