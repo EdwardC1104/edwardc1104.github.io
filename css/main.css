@@ -100,13 +100,13 @@ h1 {
 
 h2 {
 	font-family: var(--font-two);
-	font-size: calc(12px + 5vw);
+	font-size: calc(16px + 5vw);
 	text-align: center;
 }
 
 h3 {
 	font-family: var(--font-three);
-	font-size: calc(10px + 2.5vw);
+	font-size: calc(18px + 2vw);
 	font-weight: 100;
 	text-align: center;
 	text-transform: uppercase;
@@ -114,7 +114,7 @@ h3 {
 
 p {
 	font-family: var(--font-four) !important;
-	font-size: 22px;
+	font-size: calc(14px + 1vw);
 	text-align: center;
 }
 

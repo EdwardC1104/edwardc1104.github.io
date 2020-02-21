@@ -29,7 +29,7 @@
                 var page = document.getElementById("content");
                 if (checkBox.checked == true) {
                     $("#content").fadeTo("slow", 1);
-                    var hash = "#content";
+                    var hash = "#after-switch";
 
                     $('html, body').delay(300).animate({
                         scrollTop: $(hash).offset().top
@@ -68,6 +68,7 @@
             <div id="content" style="opacity:0">
                 <div class="flex2">
                     <div class="half-screen-section title">
+                        <br id="after-switch"><br>
                         <h3>Programmer</h3>
                         <h1 class="animated infinite pulse delay-1s slow">Ed Clark</h1>
                         <h3>Portfolio</h3>
