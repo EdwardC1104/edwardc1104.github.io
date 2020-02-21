@@ -205,6 +205,8 @@ input[type="checkbox"] {
 	-moz-appearance: none;
 	appearance: none;
 	opacity: 0;
+	display: none;
+	visibility: hidden;
 }
 
 .check {
