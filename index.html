@@ -1,163 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>EdCodes - Portfolio</title>
-        <meta charset="utf-8">
-        <meta name="description" content="This is a portfolio to showcase my skills as a programmer using a range of my projects. Also, this website stores all my notes for my GCSE and A-Level Computer Science work.">
-        <meta name="keywords" content="Python,Computer Science,GCSE,A Level,AS Level,Portfolio,HTML,CSS,SQL,Data Representation,Web Design,EdCodes,Ed Codes,EdCode,Edward Clark,Ed Clark,Programming Portfolio,Web Portfolio,Dorset">
-        <meta name="author" content="Ed Clark">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--<link rel="shortcut icon" type="image/png" href=""/>-->
-        <link href="css/normalise.css" rel="stylesheet" type="text/css">
-        <link href="css/animate.css" rel="stylesheet" type="text/css">
-        <link href="css/main.css" rel="stylesheet" type="text/css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+
+<head>
+    <title>EdCodes - Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="description" content="This is a portfolio to showcase my skills as a programmer using a range of my projects. Also, this website stores all my notes for my GCSE and A-Level Computer Science work.">
+    <meta name="keywords" content="Python,Computer Science,GCSE,A Level,AS Level,Portfolio,HTML,CSS,SQL,Data Representation,Web Design,EdCodes,Ed Codes,EdCode,Edward Clark,Ed Clark,Programming Portfolio,Web Portfolio,Dorset">
+    <meta name="author" content="Ed Clark">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="img/logo.png">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link href="css/normalise.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/BezierPlugin.min.js"></script>-->
-        <script>
-            $(document).ready(function() {
-                $("#top").css("overflow-y", "hidden")
-            });
+    <script src="js/switch.js"></script>
+</head>
 
-            function switchFunction() {
-                var checkBox = document.getElementById("switch");
-                var page = document.getElementById("content");
-                if (checkBox.checked == true) {
-                    $("#content").fadeTo("slow", 1);
-                    var hash = "#after-switch";
-
-                    $('html, body').delay(300).animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function() {
-
-                        window.location.hash = hash;
-                        history.replaceState(null, null, ' ');
-                    });
-                    $("#top").css("overflow-y", "auto");
-                } else {
-                    $("#content").fadeTo("slow", 0);
-                    var hash2 = "#top";
-
-                    $('html, body').delay(300).animate({
-                        scrollTop: $(hash2).offset().top
-                    }, 800, function() {
-
-                        window.location.hash = hash2;
-                        history.replaceState(null, null, ' ');
-                    });
-                    $("#top").css("overflow-y", "hidden");
-                }
-            };
-        </script>
-    </head>
-    <body id="top">
-        <div class="flex">
-            <div class="flex1">
-                <div class="half-screen-section">
-                    <label>
+<body id="top">
+    <div class="flex">
+        <div class="flex1">
+            <div class="half-screen-section">
+                <label>
                     <input type="checkbox" id="switch" onclick="switchFunction()">
                     <span class="check"></span>
-                    </label>
-                </div>
-            </div>
-            <div id="content" style="opacity:0">
-                <div class="flex2">
-                    <div class="half-screen-section title">
-                        <br id="after-switch"><br>
-                        <h3>Programmer</h3>
-                        <h1 class="animated infinite pulse delay-1s slow">Ed Clark</h1>
-                        <h3>Portfolio</h3>
-                    </div>
-                </div>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
-                    <path fill="#ffffff" fill-opacity="1" d="M0,96L360,32L720,224L1080,288L1440,224L1440,320L1080,320L720,320L360,320L0,320Z"></path>
-                </svg>
-                <div class="section-light">
-                    <h2 class="animated fadeInUp">Me</h2>
-                    <br>
-                </div>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
-                    <path fill="#ffffff" fill-opacity="1" d="M0,64L288,128L576,192L864,224L1152,64L1440,96L1440,0L1152,0L864,0L576,0L288,0L0,0Z"></path>
-                </svg>
-                <div class="section-dark">
-                    <h2>Skills</h2>
-                    <br>
-                    <center>
-                        <button class="collapsible">
-                            <h3>Python</h3>
-                        </button>
-                        <div class="collapsible-content">
-                            <p>I love Python, and I have studied it for my GCSE and A-Level Computer Science courses. As well as advanced general Python skills, I have completed projects with Matplotlib to present data, and projects with Tkinter to create GUIs.</p>
-                        </div>
-                        <button class="collapsible">
-                            <h3>HTML</h3>
-                        </button>
-                        <div class="collapsible-content">
-                            <p>I have been writing HTML since I was very young. I have become extremely advanced in it, and I know how to lay out a large file that is easy to read and navigate.</p>
-                        </div>
-                        <button class="collapsible">
-                            <h3>CSS</h3>
-                        </button>
-                        <div class="collapsible-content">
-                            <p>I am very advanced in general CSS knowledge. I regularly use Flexbox, basic animation and media queries to make my websites stand out and work on all devices.</p>
-                        </div>
-                        <button class="collapsible">
-                            <h3>JavaScript</h3>
-                        </button>
-                        <div class="collapsible-content">
-                            <p>I have only learnt the basics of JavaScipt, but I am learning more after every web project I do, and I'm interested in learning more.</p>
-                        </div>
-                        <button class="collapsible">
-                            <h3>SQL</h3>
-                        </button>
-                        <div class="collapsible-content">
-                            <p>I learnt the basics of SQL when I made a comments section for a website however, I learnt more when I studied it at school, and I can now create complex queries.</p>
-                        </div>
-                        <button class="collapsible">
-                            <h3>Git</h3>
-                        </button>
-                        <div class="collapsible-content">
-                            <p>I host all my projects on GitHub, and I interact with them through the terminal. I can add, commit, push, pull, and merge.</p>
-                        </div>
-                    </center>
-                </div>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                    <path fill="#ffffff" fill-opacity="1" d="M0,64L360,96L720,192L1080,320L1440,160L1440,320L1080,320L720,320L360,320L0,320Z"></path>
-                </svg>
-                <div class="section-light">
-                    <h2>Projects</h2>
-                    <br>
-                </div>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
-                    <path fill="#ffffff" fill-opacity="1" d="M0,64L360,32L720,192L1080,288L1440,192L1440,0L1080,0L720,0L360,0L0,0Z"></path>
-                </svg>
-                <div class="section-dark">
-                    <h2>Contact</h2>
-                    <br>
-                </div>
+                </label>
             </div>
         </div>
-        <script src="js/smooth-scroll.js"></script>
-        <script>
-            var coll = document.getElementsByClassName("collapsible");
-            var i;
+        <div id="content" style="opacity:0">
+            <div class="flex2">
+                <div class="half-screen-section title">
+                    <br id="after-switch"><br>
+                    <h3>Programmer</h3>
+                    <h1 class="animated infinite pulse delay-1s slow">Ed Clark</h1>
+                    <h3>Portfolio</h3>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
+                <path fill="#ffffff" fill-opacity="1" d="M0,96L360,32L720,224L1080,288L1440,224L1440,320L1080,320L720,320L360,320L0,320Z"></path>
+            </svg>
+            <div class="section-light">
+                <h2 class="animated fadeInUp">Me</h2>
+                <br>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
+                <path fill="#ffffff" fill-opacity="1" d="M0,64L288,128L576,192L864,224L1152,64L1440,96L1440,0L1152,0L864,0L576,0L288,0L0,0Z"></path>
+            </svg>
+            <div class="section-dark">
+                <h2>Skills</h2>
+                <br>
+                <center>
+                    <button class="collapsible">
+                        <h3>Python</h3>
+                    </button>
+                    <div class="collapsible-content">
+                        <p>I love Python, and I have studied it for my GCSE and A-Level Computer Science courses. As well as advanced general Python skills, I have completed projects with Matplotlib to present data, and projects with Tkinter to
+                            create GUIs.</p>
+                    </div>
+                    <button class="collapsible">
+                        <h3>HTML</h3>
+                    </button>
+                    <div class="collapsible-content">
+                        <p>I have been writing HTML since I was very young. I have become extremely advanced in it, and I know how to lay out a large file that is easy to read and navigate.</p>
+                    </div>
+                    <button class="collapsible">
+                        <h3>CSS</h3>
+                    </button>
+                    <div class="collapsible-content">
+                        <p>I am very advanced in general CSS knowledge. I regularly use Flexbox, basic animation and media queries to make my websites stand out and work on all devices.</p>
+                    </div>
+                    <button class="collapsible">
+                        <h3>JavaScript</h3>
+                    </button>
+                    <div class="collapsible-content">
+                        <p>I have only learnt the basics of JavaScipt, but I am learning more after every web project I do, and I'm interested in learning more.</p>
+                    </div>
+                    <button class="collapsible">
+                        <h3>SQL</h3>
+                    </button>
+                    <div class="collapsible-content">
+                        <p>I learnt the basics of SQL when I made a comments section for a website however, I learnt more when I studied it at school, and I can now create complex queries.</p>
+                    </div>
+                    <button class="collapsible">
+                        <h3>Git</h3>
+                    </button>
+                    <div class="collapsible-content">
+                        <p>I host all my projects on GitHub, and I interact with them through the terminal. I can add, commit, push, pull, and merge.</p>
+                    </div>
+                </center>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
+                <path fill="#ffffff" fill-opacity="1" d="M0,64L360,96L720,192L1080,320L1440,160L1440,320L1080,320L720,320L360,320L0,320Z"></path>
+            </svg>
+            <div class="section-light">
+                <h2>Projects</h2>
+                <br>
+                <div class="projects">
+                    <div class="project1">
 
-            for (i = 0; i < coll.length; i++) {
-                coll[i].addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    var content = this.nextElementSibling;
-                    if (content.style.maxHeight) {
-                        content.style.maxHeight = null;
-                    } else {
-                        content.style.maxHeight = content.scrollHeight + "px";
-                    }
-                });
-            }   
-        </script>
-    </body>
+                    </div>
+                    <div class="project2">
+
+                    </div>
+                    <div class="project3">
+
+                    </div>
+                    <div class="project4">
+
+                    </div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
+                <path fill="#ffffff" fill-opacity="1" d="M0,64L360,32L720,192L1080,288L1440,192L1440,0L1080,0L720,0L360,0L0,0Z"></path>
+            </svg>
+            <div class="section-dark">
+                <h2>Contact</h2>
+                <br>
+            </div>
+        </div>
+    </div>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/collapsible.js"></script>
+</body>
+
 </html>
