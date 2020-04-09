@@ -26,7 +26,11 @@
 }
 
 html, body {
-    background-color: var(--bg-color-one);
+    /*background-color: var(--bg-color-one);*/
+    background-image: url("../img/blueee.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100%;
     overflow-x: hidden;
 }
@@ -77,12 +81,21 @@ html, body {
 }*/
 #content {
     min-width: 100vw;
+    opacity: 0;
 }
 
 svg, path {
     margin: 0;
     border: 0;
     display: block;
+}
+
+svg {
+    background-color: var(--bg-color-one);
+}
+
+.no-bg {
+    background: none;
 }
 
 /* Text */
@@ -220,7 +233,7 @@ input[type="checkbox"] {
     display: inline-block;
     width: 120px;
     height: 60px;
-    background: #555;
+    background: rgba(0,0,0,0.6);
     border-radius: 60px;
     transition: 0.5s;
 }

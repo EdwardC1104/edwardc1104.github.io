@@ -1,5 +1,6 @@
 $(document).ready(function() {
     $("#top").css("overflow-y", "hidden")
+    $("#switch").prop("checked", false);
 });
 
 function switchFunction() {
