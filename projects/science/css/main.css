@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 @font-face {
     font-family: 'Impact';
     src: local('Impact'), url('fonts/impact.ttf') format('truetype');
@@ -51,7 +52,6 @@ body {
     background-image: url('../img/reef.jpg');
     min-height: 50vh;
     position: relative;
-    opacity: 0.8;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -62,7 +62,16 @@ body {
     background-image: url('../img/cities.jpg');
     min-height: 50vh;
     position: relative;
-    opacity: 0.8;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.worlds-parallax {
+    background-image: url('../img/worlds.jpg');
+    min-height: 50vh;
+    position: relative;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -79,7 +88,7 @@ h1 {
     color: rgb(228, 235, 243);
     text-align: right;
     font-family: "Impact";
-    font-size: calc(50px + 10vw);
+    font-size: min(calc(50px + 10vw), 430px);
     line-height: 100%;
 }
 
@@ -139,12 +148,19 @@ p {
     h1 {
         font-size: calc(80px);
     }
+
     .maintitle {
         padding: 10px 10px 0px 0px;
         height: 50vh;
     }
+
     .subtitle {
         padding: 0px 0px 10px 10px;
+    }
+
+    .hide-on-mobile {
+        display: none;
+        visibility: hidden;
     }
 }
 
@@ -153,6 +169,7 @@ p {
         display: none;
         visibility: hidden;
     }
+
     .maintitle {
         height: 75vh;
     }
@@ -177,6 +194,7 @@ p {
 }
 
 @-moz-keyframes bounce {
+
     0%,
     20%,
     50%,
@@ -185,10 +203,12 @@ p {
         -moz-transform: translateY(0);
         transform: translateY(0);
     }
+
     40% {
         -moz-transform: translateY(-30px);
         transform: translateY(-30px);
     }
+
     60% {
         -moz-transform: translateY(-15px);
         transform: translateY(-15px);
@@ -196,6 +216,7 @@ p {
 }
 
 @-webkit-keyframes bounce {
+
     0%,
     20%,
     50%,
@@ -204,10 +225,12 @@ p {
         -webkit-transform: translateY(0);
         transform: translateY(0);
     }
+
     40% {
         -webkit-transform: translateY(-30px);
         transform: translateY(-30px);
     }
+
     60% {
         -webkit-transform: translateY(-15px);
         transform: translateY(-15px);
@@ -215,6 +238,7 @@ p {
 }
 
 @keyframes bounce {
+
     0%,
     20%,
     50%,
@@ -225,12 +249,14 @@ p {
         -webkit-transform: translateY(0);
         transform: translateY(0);
     }
+
     40% {
         -moz-transform: translateY(-30px);
         -ms-transform: translateY(-30px);
         -webkit-transform: translateY(-30px);
         transform: translateY(-30px);
     }
+
     60% {
         -moz-transform: translateY(-15px);
         -ms-transform: translateY(-15px);
@@ -256,7 +282,7 @@ p {
     height: 80px;
     position: absolute;
     left: 0%;
-    top: 20%;
+    top: 25%;
     z-index: 50;
 }
 
@@ -275,7 +301,7 @@ p {
     width: 100%;
 }
 
-.reef-text > p {
+.reef-text>p {
     margin: 10px;
 }
 
@@ -318,9 +344,11 @@ p {
     0% {
         opacity: 0;
     }
+
     50% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -330,23 +358,60 @@ p {
     0% {
         opacity: 0;
     }
+
     50% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
 }
 
 .hover-blur {
-  display: inline-block;
-  transition: opacity 2s ease-out, filter 2s ease-out, transform 2s ease-out;
-  transition-delay: 0.6s;
+    display: inline-block;
+    transition: opacity 2s ease-out, filter 2s ease-out, transform 2s ease-out;
+    transition-delay: 0.6s;
 }
 
 .hover-blur:hover {
     transition: 2s ease-in;
     filter: blur(20px);
     opacity: 0;
-    transform: rotate(90deg) translateY(200px);
+    transform: translateY(-200px);
+}
+
+.look-upwards-section {
+    background-color: black;
+    padding: 20px 0px 0px 20px;
+}
+
+#upwards {
+    text-align: right;
+}
+
+.big-text {
+    font-size: calc(40px + 11vw);
+}
+
+@media only screen and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+    .look-upwards-text {
+        text-align: center;
+    }
+
+    #upwards {
+        text-align: center;
+    }
+
+    .look-upwards-section {
+        padding: 10px 0px 10px 0px;
+    }
+}
+
+.worlds {
+    background: rgb(195, 141, 157);
+    background: -moz-linear-gradient(128deg, rgba(218, 168, 183, 1) 0%, rgba(195, 141, 157, 1) 50%, rgba(190, 122, 142, 1) 100%);
+    background: -webkit-linear-gradient(128deg, rgba(218, 168, 183, 1) 0%, rgba(195, 141, 157, 1) 50%, rgba(190, 122, 142, 1) 100%);
+    background: linear-gradient(128deg, rgba(218, 168, 183, 1) 0%, rgba(195, 141, 157, 1) 50%, rgba(190, 122, 142, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#daa8b7", endColorstr="#be7a8e", GradientType=1);
 }

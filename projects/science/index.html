@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="shortcut icon" type="image/png" href="img/globe.png">
     <link rel="icon" type="image/png" href="img/globe.png">
-    <link href="css/main.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js" integrity="sha256-XBVALc3QsDSQiDtiaBwNZ2rxCJTHzlUhhlDQ84J8bw8=" crossorigin="anonymous"></script>
@@ -17,9 +16,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/CSSPlugin.min.js" integrity="sha256-LBjlnpPrM6Aig8LDFc9PJctPHLGUc6RaUvnmXE4hV5Y=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineLite.min.js" integrity="sha256-nuhNsfXzBFR6G1lKP8bK77dakkQDqdHcQ4OCFZvk6Qo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/BezierPlugin.min.js" integrity="sha256-5jxCMRC1PYU02qJn+fj+DPuxcQZCh0DR8GRwi4iKoRc=" crossorigin="anonymous"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/smooth-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha256-pQBbLkFHcP1cy0C8IhoSdxlm0CtcH5yJ2ki9jjgR03c=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha256-GqiEX9BuR1rv5zPU5Vs2qS/NSHl1BJyBcjQYJ6ycwD4=" crossorigin="anonymous" />
+    <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
 
 <body id="top" data-spy="scroll">
@@ -57,13 +56,14 @@
                     <p>Prey and predators live in harmony on reefs. Fish swim around aware of the threats around them, but safe in the knowledge that they could escape easily. The predators know this so they only attack when they
                         will win in order to save energy.<br /><br /><br />"<i>...the imagination of nature is far, far greater than the imagination of man.</i>"<br />- Richard Feynman</p>
                 </div>
-                <div class="fish-space"><img src="img/fish.png" alt="Cartoon Fish" class="fish">
+                <div class="fish-space hide-on-mobile">
+                    <img src="img/fish.png" alt="Cartoon Fish" class="fish">
                 </div>
             </section>
         </section>
     </div>
     <div class="reef-parallax parallax"></div>
-    <div id="humanity" class="humanity">
+    <div class="humanity">
         <section data-aos="fade-up">
             <h2 class="title">HUMANITY</h2>
         </section>
@@ -78,9 +78,31 @@
         </section>
         <br>
     </div>
-
     <div class="humanity-parallax parallax"></div>
+    <div class="look-upwards-section">
+        <section data-aos="">
+            <h2 class="look-upwards-text">LOOK</h2>
+            <h2 id="upwards" class="look-upwards-text">UPWARDS</h2>
+        </section>
+    </div>
+    <div class="worlds">
+        <section data-aos="fade-up">
+            <h2 class="title">OTHER WORLDS</h2>
+        </section>
+        <section data-aos="fade-up">
+            <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </section>
+        <br>
+    </div>
+    <div class="worlds-parallax parallax"></div>
     <script src="js/main.js"></script>
+    <script src="js/smooth-scroll.js"></script>
 </body>
 
 </html>
