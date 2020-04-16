@@ -78,6 +78,16 @@ body {
     background-size: cover;
 }
 
+.mars-parallax {
+    background-image: url('../img/mars.jpg');
+    min-height: 50vh;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 @media only screen and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
     .parallax {
         background-attachment: scroll;
@@ -292,19 +302,6 @@ p {
     overflow: hidden;
 }
 
-.reef-text {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(max(30vw, 350px), 1fr));
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    padding: 10px 15px 0px 20px;
-    width: 100%;
-}
-
-.reef-text>p {
-    margin: 10px;
-}
-
 .humanity {
     background-color: rgb(237, 151, 93);
     background: -moz-linear-gradient(128deg, rgba(238, 161, 109, 1) 0%, rgba(237, 151, 93, 1) 50%, rgba(215, 120, 55, 1) 100%);
@@ -414,4 +411,22 @@ p {
     background: -webkit-linear-gradient(128deg, rgba(218, 168, 183, 1) 0%, rgba(195, 141, 157, 1) 50%, rgba(190, 122, 142, 1) 100%);
     background: linear-gradient(128deg, rgba(218, 168, 183, 1) 0%, rgba(195, 141, 157, 1) 50%, rgba(190, 122, 142, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#daa8b7", endColorstr="#be7a8e", GradientType=1);
+}
+
+.mars {
+    background: rgb(130,51,35);
+    background: -moz-linear-gradient(128deg, rgba(130,51,35,1) 0%, rgba(108,33,17,1) 50%, rgba(91,21,6,1) 100%);
+    background: -webkit-linear-gradient(128deg, rgba(130,51,35,1) 0%, rgba(108,33,17,1) 50%, rgba(91,21,6,1) 100%);
+    background: linear-gradient(128deg, rgba(130,51,35,1) 0%, rgba(108,33,17,1) 50%, rgba(91,21,6,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#823323",endColorstr="#5b1506",GradientType=1);
+}
+
+.three-columns {
+    column-count: 3;
+    column-width: max(30vw, 350px);
+    padding: 10px 15px 0px 20px;
+}
+
+.span-all-columns {
+    column-span: all;
 }
